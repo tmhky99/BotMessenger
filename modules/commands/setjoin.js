@@ -4,7 +4,7 @@ module.exports.config = {
     hasPermssion: 1,
     credits: "Mirai Team",
     description: "Chỉnh sửa văn bản/ảnh động khi có thành viên mới tham gia",
-    commandCategory: "config",
+    commandCategory: "group",
     usages: "[gif/text] [Text hoặc url tải ảnh gif]",
     cooldowns: 10,
     dependencies: {
