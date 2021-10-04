@@ -4,7 +4,7 @@ module.exports.config = {
 	hasPermssion: 1,
 	credits: "Mirai Team",
 	description: "Đặt lại prefix của nhóm",
-	commandCategory: "config",
+	commandCategory: "group",
 	usages: "[prefix/reset]",
 	cooldowns: 5
 };
