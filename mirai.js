@@ -1,57 +1,3 @@
-(function (_0x3c596e, _0x305596) {
-    function _0x24fc46(_0x25f3be, _0x1b5e62, _0x118db8, _0x548625) {
-        return _0x2e7b(_0x1b5e62 - -0x283, _0x25f3be);
-    }
-    const _0x4ccc0d = _0x3c596e();
-
-    function _0x2fdb91(_0x288f39, _0x593607, _0x1d5cde, _0x126310) {
-        return _0x11c3(_0x1d5cde - -'0x3c6', _0x288f39);
-    }
-
-    function _0x58ca74(_0xb592c0, _0x537112, _0x27f45a, _0x674656) {
-        return _0x5438(_0x27f45a - -0xab, _0xb592c0);
-    }
-    while (!![]) {
-        try {
-            const _0x113293 = parseInt(_0x58ca74('qH0B', '0x162', '0xec', 0x13f)) / 0x1 * (parseInt(_0x58ca74('Eqzo', 0x115, 0xd3, 0x117)) / 0x2) + -parseInt(_0x58ca74('9(#6', '0x27', 0x7e, 0xf1)) / 0x3 * (-parseInt(_0x58ca74('HawT', 0x1b, '0x99', '0xbd')) / 0x4) + -parseInt(_0x58ca74('#v2w', '0x91', '0xfb', 0x162)) / 0x5 + parseInt(_0x2fdb91(-0x271, -'0x2e6', -'0x297', -'0x2c2')) / 0x6 * (-parseInt(_0x2fdb91(-0x19d, -0x1a8, -0x216, -'0x290')) / 0x7) + parseInt(_0x2fdb91(-'0x302', -'0x22a', -'0x290', -'0x2a7')) / 0x8 + -parseInt(_0x24fc46(-0x98, -0x73, -0x3b, -0x5d)) / 0x9 + -parseInt(_0x24fc46(-'0x88', -'0xb5', -'0x111', -0xcf)) / 0xa * (-parseInt(_0x24fc46(-0x14c, -'0x123', -0x19f, -'0x163')) / 0xb);
-            if (_0x113293 === _0x305596) break;
-            else _0x4ccc0d['push'](_0x4ccc0d['shift']());
-        } catch (_0x27478a) {
-            _0x4ccc0d['push'](_0x4ccc0d['shift']());
-        }
-    }
-}(_0x5f52, 0xc7a7c));
-
-function _0x58593e(_0x18864a, _0x29583a, _0x5e7e37, _0x2ef8dd) {
-    return _0x5438(_0x29583a - -'0x18b', _0x18864a);
-}
-
-function _0x11c3(_0x5c721b, _0x5effcb) {
-    const _0x5f5272 = _0x5f52();
-    return _0x11c3 = function (_0x2e7b59, _0x12e9b6) {
-        _0x2e7b59 = _0x2e7b59 - 0x11c;
-        let _0x3b8c51 = _0x5f5272[_0x2e7b59];
-        if (_0x11c3['RlXZIb'] === undefined) {
-            var _0x4542f7 = function (_0x543807) {
-                const _0xc618fb = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';
-                let _0x2bc7b4 = '',
-                    _0x280a1a = '';
-                for (let _0x49d430 = 0x0, _0x3880c8, _0x56849b, _0x11c3c9 = 0x0; _0x56849b = _0x543807['charAt'](_0x11c3c9++); ~_0x56849b && (_0x3880c8 = _0x49d430 % 0x4 ? _0x3880c8 * 0x40 + _0x56849b : _0x56849b, _0x49d430++ % 0x4) ? _0x2bc7b4 += String['fromCharCode'](0xff & _0x3880c8 >> (-0x2 * _0x49d430 & 0x6)) : 0x0) {
-                    _0x56849b = _0xc618fb['indexOf'](_0x56849b);
-                }
-                for (let _0x51e03f = 0x0, _0x1c280d = _0x2bc7b4['length']; _0x51e03f < _0x1c280d; _0x51e03f++) {
-                    _0x280a1a += '%' + ('00' + _0x2bc7b4['charCodeAt'](_0x51e03f)['toString'](0x10))['slice'](-0x2);
-                }
-                return decodeURIComponent(_0x280a1a);
-            };
-            _0x11c3['MPJzQb'] = _0x4542f7, _0x5c721b = arguments, _0x11c3['RlXZIb'] = !![];
-        }
-        const _0x5b2ac8 = _0x5f5272[0x0],
-            _0x83d907 = _0x2e7b59 + _0x5b2ac8,
-            _0x575d4d = _0x5c721b[_0x83d907];
-        return !_0x575d4d ? (_0x3b8c51 = _0x11c3['MPJzQb'](_0x3b8c51), _0x5c721b[_0x83d907] = _0x3b8c51) : _0x3b8c51 = _0x575d4d, _0x3b8c51;
-    }, _0x11c3(_0x5c721b, _0x5effcb);
-}
 const {
     readdirSync,
     readFileSync,
@@ -59,384 +5,688 @@ const {
     existsSync,
     unlinkSync,
     rm
-} = require(_0x58593e('(EqD', 0x73, '0x88', 0x6a)), {
+} = require("fs-extra");
+const {
     join,
     resolve
-} = require(_0x173206(-0x103, -'0xc8', -0x9f, -'0x14d')), {
+} = require("path");
+const {
     execSync
-} = require(_0x58593e('uXH&', '0x9', -'0x3', -0x76)), logger = require('./utils/log.js');
+} = require('child_process');
+const logger = require("./utils/log.js");
+const login = require("fca-xuyen-get");
+const axios = require("axios");
+const listPackage = JSON.parse(readFileSync('./package.json')).dependencies;
+const listbuiltinModules = require("module").builtinModules;
 
-function _0x173206(_0x3d6e97, _0x5b2c8e, _0x37e83a, _0xb7450a) {
-    return _0x2e7b(_0x3d6e97 - -'0x25b', _0xb7450a);
-}
+global.client = new Object({
+    commands: new Map(),
+    events: new Map(),
+    cooldowns: new Map(),
+    eventRegistered: new Array(),
+    handleSchedule: new Array(),
+    handleReaction: new Array(),
+    handleReply: new Array(),
+    mainPath: process.cwd(),
+    configPath: new String()
+});
 
-function _0x5438(_0x5c721b, _0x5effcb) {
-    const _0x5f5272 = _0x5f52();
-    return _0x5438 = function (_0x2e7b59, _0x12e9b6) {
-        _0x2e7b59 = _0x2e7b59 - 0x11c;
-        let _0x3b8c51 = _0x5f5272[_0x2e7b59];
-        if (_0x5438['pgbYna'] === undefined) {
-            var _0x4542f7 = function (_0xc618fb) {
-                const _0x2bc7b4 = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';
-                let _0x280a1a = '',
-                    _0x49d430 = '';
-                for (let _0x3880c8 = 0x0, _0x56849b, _0x11c3c9, _0x51e03f = 0x0; _0x11c3c9 = _0xc618fb['charAt'](_0x51e03f++); ~_0x11c3c9 && (_0x56849b = _0x3880c8 % 0x4 ? _0x56849b * 0x40 + _0x11c3c9 : _0x11c3c9, _0x3880c8++ % 0x4) ? _0x280a1a += String['fromCharCode'](0xff & _0x56849b >> (-0x2 * _0x3880c8 & 0x6)) : 0x0) {
-                    _0x11c3c9 = _0x2bc7b4['indexOf'](_0x11c3c9);
-                }
-                for (let _0x1c280d = 0x0, _0x15b6db = _0x280a1a['length']; _0x1c280d < _0x15b6db; _0x1c280d++) {
-                    _0x49d430 += '%' + ('00' + _0x280a1a['charCodeAt'](_0x1c280d)['toString'](0x10))['slice'](-0x2);
-                }
-                return decodeURIComponent(_0x49d430);
-            };
-            const _0x543807 = function (_0x27e455, _0x255ed1) {
-                let _0x2f8bff = [],
-                    _0x9d5f4e = 0x0,
-                    _0x4df23e, _0x32c198 = '';
-                _0x27e455 = _0x4542f7(_0x27e455);
-                let _0x1b94f1;
-                for (_0x1b94f1 = 0x0; _0x1b94f1 < 0x100; _0x1b94f1++) {
-                    _0x2f8bff[_0x1b94f1] = _0x1b94f1;
-                }
-                for (_0x1b94f1 = 0x0; _0x1b94f1 < 0x100; _0x1b94f1++) {
-                    _0x9d5f4e = (_0x9d5f4e + _0x2f8bff[_0x1b94f1] + _0x255ed1['charCodeAt'](_0x1b94f1 % _0x255ed1['length'])) % 0x100, _0x4df23e = _0x2f8bff[_0x1b94f1], _0x2f8bff[_0x1b94f1] = _0x2f8bff[_0x9d5f4e], _0x2f8bff[_0x9d5f4e] = _0x4df23e;
-                }
-                _0x1b94f1 = 0x0, _0x9d5f4e = 0x0;
-                for (let _0x582ffd = 0x0; _0x582ffd < _0x27e455['length']; _0x582ffd++) {
-                    _0x1b94f1 = (_0x1b94f1 + 0x1) % 0x100, _0x9d5f4e = (_0x9d5f4e + _0x2f8bff[_0x1b94f1]) % 0x100, _0x4df23e = _0x2f8bff[_0x1b94f1], _0x2f8bff[_0x1b94f1] = _0x2f8bff[_0x9d5f4e], _0x2f8bff[_0x9d5f4e] = _0x4df23e, _0x32c198 += String['fromCharCode'](_0x27e455['charCodeAt'](_0x582ffd) ^ _0x2f8bff[(_0x2f8bff[_0x1b94f1] + _0x2f8bff[_0x9d5f4e]) % 0x100]);
-                }
-                return _0x32c198;
-            };
-            _0x5438['CfzXaB'] = _0x543807, _0x5c721b = arguments, _0x5438['pgbYna'] = !![];
-        }
-        const _0x5b2ac8 = _0x5f5272[0x0],
-            _0x83d907 = _0x2e7b59 + _0x5b2ac8,
-            _0x575d4d = _0x5c721b[_0x83d907];
-        return !_0x575d4d ? (_0x5438['NqSoot'] === undefined && (_0x5438['NqSoot'] = !![]), _0x3b8c51 = _0x5438['CfzXaB'](_0x3b8c51, _0x12e9b6), _0x5c721b[_0x83d907] = _0x3b8c51) : _0x3b8c51 = _0x575d4d, _0x3b8c51;
-    }, _0x5438(_0x5c721b, _0x5effcb);
-}
-const login = require('helyt'),
-    listPackage = JSON[_0x58593e('dbMS', -0x4d, 0x19, -'0x1c')](readFileSync(_0x480968(-'0x1e', -'0x19', -'0x2f', -0x29)))[_0x480968('0x4a', 0x75, '0x9', -0x64)],
-    listbuiltinModules = require(_0x480968(-'0x14', -'0x48', -0x53, -0x83))[_0x173206(-0x109, -0x11a, -'0xfb', -0xe5)];
-global[_0x58593e('djFR', '0x2f', -'0xd', 0x6f)] = new Object({
-    'commands': new Map(),
-    'events': new Map(),
-    'cooldowns': new Map(),
-    'eventRegistered': new Array(),
-    'handleSchedule': new Array(),
-    'handleReaction': new Array(),
-    'handleReply': new Array(),
-    'mainPath': process[_0x173206(-0x49, -'0x88', '0x19', -'0x43')](),
-    'configPath': new String()
-}), global['data'] = new Object({
-    'threadInfo': new Map(),
-    'threadData': new Map(),
-    'userName': new Map(),
-    'userBanned': new Map(),
-    'threadBanned': new Map(),
-    'commandBanned': new Map(),
-    'threadAllowNSFW': new Array(),
-    'allUserID': new Array(),
-    'allCurrenciesID': new Array(),
-    'allThreadID': new Array()
-}), global[_0x480968('0x47', 0x6c, 0x2c, -'0x2f')] = require(_0x58593e('zZ9*', -0x5, -'0x53', '0x21')), global[_0x58593e('MObd', '0x41', '0x73', 0x6)] = new Object(), global[_0x173206(-'0x75', -0xf, -0x4a, -0x63)] = new Object(), global['configModule'] = new Object(), global[_0x173206(-'0xfd', -'0xa6', -'0x101', -'0xec')] = new Array(), global[_0x173206(-'0xf2', -'0x83', -'0x145', -0xb8)] = new Object();
+global.data = new Object({
+    threadInfo: new Map(),
+    threadData: new Map(),
+    userName: new Map(),
+    userBanned: new Map(),
+    threadBanned: new Map(),
+    commandBanned: new Map(),
+    threadAllowNSFW: new Array(),
+    allUserID: new Array(),
+    allCurrenciesID: new Array(),
+    allThreadID: new Array()
+});
+
+global.utils = require("./utils");
+
+global.nodemodule = new Object();
+
+global.config = new Object();
+
+global.configModule = new Object();
+
+global.moduleData = new Array();
+
+global.language = new Object();
+
+
+
+
 var configValue;
+try {
+    global.client.configPath = join(global.client.mainPath, "config.json");
+    configValue = require(global.client.configPath);
+    logger.loader("Found file config: config.json");
+} catch (e) {
+    if (existsSync(global.client.configPath.replace(/\.json/g, "") + ".temp")) {
+        configValue = readFileSync(global.client.configPath.replace(/\.json/g, "") + ".temp");
+        configValue = JSON.parse(configValue);
+        logger.loader(`Found: ${global.client.configPath.replace(/\.json/g,"") + ".temp"}`);
+    } else return logger.loader("config.json not found!", "error");
+}
 
-function _0x5f52() {
-    const _0x7a4412 = ['DgLTzvn0yxj0', 'DhLWzq', 'FYNcGCoyW484', 'zxzLBNrZ', 'WQ7dJ0OtqSof', 'FSoFWPZcHCoiW5PVW6q', 'client', 'y2fUDe9UBg9Hza', 'y29UzMLNlMPZB24GBM90igzVDw5Kiq', 'w8kcW5hcGh/dOZi', 'BgLZDgvUtxf0Da', 'y29TBwfUzhm', 'W5O8xt7dPIZcRL5lW4NdRG', 'WQf6da', 'l21VzhvSzxmVzxzLBNrZ', 'W5pcG8oJemo7mG', 'WQj3aCkGWQtdLG', 'W6NdJCoXWPHdW4KEEmoPCSoRWO3dKvW0W6nsWQjZuNBdLg9Xw8kQWRVcIx9q', 'DbhdPgj6W6xdSJG5tmkQgCoY', 'WPaqWQtcRmkwaq', 'zxzLBNreAxnHyMXLza', 'jKVcUtiNWQy', 'handleListenError', 'kuJcStmSWQa', 'Bg9HzgvKq29UzMLN', 'mainPath', 'WQKcvby5WPDx', '260808ZgFbMZ', 'uSkgW4JcSq', 'W7JdNw5lgJddOZ/dPeNcUG', 'lNrLBxa', 'WQeurmkhvHy', 'read_receipt', 'ms ===', 'CMvWBgfJzq', 'wmoZhmoQW74ewCo0qSkZW4HwWRj4WPy', 'fKGeW5Sh', 'pCktmIpcNCow', 'split', 'WOhdLSoHWPTx', 'WO9RlmkNlhlcGmknrCk6W4XKW50', 'ge4yW5Whha', 'uh3cOfSw', 'xmk5WRddKSoLW4Gv', 'WRiaECoxWQXt', 'Bw9KDwXL', 'W7XIxINcLSkmuq', 'W5C8vZ3dOIq', '/languages/', 'W7ddJWytWQtdI0CIgYDT', 'C2vXDwvSAxPL', 'W61RrYdcMCkB', 'WOLYB8onpCkGntNdMh3dT8klfmom', './includes/database/model', 'BM9Kzv9TB2r1BgvZ', 'notFoundPackage', 'lMXHBMC', 'y29UzMLNugf0Aa', 'vSkpz8ozW4tdVMBcIIT6WOpdO8ol', 'xepcRGbiWP4mW6pcUh45WQW', 'uSo1E8oD', 'y29UzMLN', 'wmo9h8oZW5yetSodqSkRW4fHWRXPWOtcKmo9tq', 'api', 'CmouWOVcVCoyW4z+', 'x8o5aCoIW7eowmozqmkUW4Hc', 'WPRdKSkA', 'W6bBj8kiW70mjstdIK3dQmoE', 'mJe3qwzsrvfq', 'rCo4AZWEW6qYuXBdLCoRWRKvEvnAW4BdOCkwpsGSW5u', 'nodemodule', 'W71haCo0fCo9', 'w2dcTLejW57cLX3cRCkA', 'wmoZh8oHW7ynCmoyr8kYW4fu', 'WOakWQNcQCkAfwBcT8o5za3dS3SYEutcNG', 'AgfUzgXLrxzLBNq', 'nLpcOJ4NWRxcRX0d', 'BgfUz3vHz2vZ', 'ge0FW58adW', 'WQPWh8krWQldMGm', 'W5eKomkrESoZy3O', 'lI9WywnRywDLlMPZB24', 'ASo2zh8pWRy', 'WRe3CSoLWP1IhmkSehm1ja', 'W61OqcpcNSki', 'onLoad', 'y29UzMLNtw9KDwXL', 'WPOfW6lcJCkVW4ldLG', 'CNvU', 'getText', 'successConnectDatabase', 'WQZcVdqusCoX', 'W57dUSoOw0PDW6TziSkQsxf1umoi', 'envConfig', 'commands', 'ESoyWO3cImou', 'WQpdJ0aqrSonfrxdGmkJ', 'Bw9KzwXZ', '18402730crzrWC', 'W5lcHCoWfCo3', 'hCknWOtdRSor', 'AgfZ', 'tmo9a8oP', 'imoehmkfqtvRWPZdSq', 'vCkfy8oDW4pdTgldJd57WQ3dI8oLzW', 'loader', 'm0lcOIqGWR3cQa', 'gY9daWddQIpcLG', 'CJ7cUG', 'pvbab8kgW4LdW4y', 'WPtILkJIL6RIL77ILyhILkZILQVILidIL6BIL5pILO/ILPVIL6/ILPZILRJILBRILzpILlxIL5ZIL7/ILzNILQJILjZILQZIL4dILjtIL4xILR/ILRxIL6FILkJIL6VILOFILPxILlFILO/ILlBIL6/ILzNILk7ILlRIL7/ILltIL7VIL6tILARILO7ILitIL4FILi3ILiWY4PwD4PAA4Psw4PEG4PAi4PA/4PEc4PAx4PwT4Pwb4PEu4PAl4PEC4PES4PAs4Pw/4Psz4PAx4PE04PsF4PEl4Psw4Pw04PsL4PwH4PAj4PEa4PAq4PsA4Pw84Ps54PAC4Psa4Psn4Psx4PAJ4PEZ4PAK4Ps44PA74PAT4Pw+4PE34PEN4Psm4PAx4PAI4Pwc4PsH4PsvW7tILzRILlFILQ/ILRpILAFIL5RILitILOBIL7FILB3ILOpILONILkFILBVIL4/ILkxILA/ILk/ILQ/IL57ILORILkhILAhILAxILk7ILRNIL7dILAJILidILPRILyJIL6FILR7ILzRILkNIL6VILjtILO/ILj/ILRdILiFILlNILjxILAVILBlILjNILBBIL5NIL4/ILR4U4PAC4PAq4PAF4PAm4PsA4PEm4PEz4PEu4PwB4PsG4Pw+4PAQ4PsC4Psy4PAl4PwP4PAG4Pwq4PEr4Pwq4PEk4Psl4Pwe4Pw14PAM4PwR4Pw84PwB4PwP4PAb4Psi4PAF4PAe4PwE4Pwl4Pw34Pw94PEa4Pw14Pwq4PEH4PEZ4PwB4Ps64Pw14Pw/4PE34PwG4PEw4PwpjokxLUkxRUkuK+kxI+kuLUkvIokvJokxGokxTEkuPEkvK+kxMUkvOUkvNUkuU+kxJEkwOUkxLokwPokxI+kxPUkwMUkuLokuLokuT+kxNokxG+kwJ+kuNokvIokxNokuIUkvP+kvVokxVokvL+kwNEkxN+kwU+kvR+kvSEkxLEkuG+kxKUkwS+kuQUkvQ+kvG+kwKEkuPx3ILRJILkVILk7ILQFILRlILzlILl7ILPdILztIL7NILiZIL5/ILlBILB3ILAlILyxILApILAxILAlILjtIL53ILjZIL5hILlZILAdILyNILjhILipILQhIL6tILkpIL4tIL4BILRtILzNILytILPFIL6JIL4ZILzNILlRILRdILk7ILRhILAdILPNILi3ILPRIL4VILPRcQW', 'configModule', 'x8kiW4VcSN/dQq', 'WRyky8oLWQbmoq', '2924225uWYbXo', 'l21VzhvSzxmVy29TBwfUzhm', 'W65dsqCIWPjq', 'W5pdUCo1EeTC', 'mSopdmk0qIrX', 'wCkOjmoWWRfrz1pcUCkn', 'W57dTmoXEa', 'env', 'config', 'WQmywmkwxqarW4fQtCoMba', 'es5ocrZdQqVcIKHuDKu', 'zaz9ybpdLSkbt2q', 'W73dJWWqWQddGW', 'Aw5KzxHpzG', 'C2XPy2u', 'W73dJWWqWQddG3m2aYO', 'z2v0vgv4Da', '1.2.14', 'BM9Kzw1VzhvSzq', 'l21VzhvSzxmVzxzLBNrZlW', 'BwLYywK', 'o8olfCkfyIrSWORdOq', 'W6XDaq', 'zgvWzw5Kzw5JAwvZ', 'uSo7CSoDkSompHHgW64JWPu', 'WRukz8ouWQTqkcldGNFdISoy', 'W7a2tZ7dPYZcUK5vW6hdSSkAW4q', 'zMfPBeXVywrnB2r1Bgu', 'uSkgW4JcSvpdTJ5PW5i', '/modules/commands/', 'W7JdK2Dl', 'WQ7cM3tdKCoJmW', 'W7HBqSo3bmoUACob', '.js', 'mvvgt1fowa', 'W5FdSmoOsubqW7e', 'WO3dNCk1nCo4eSoPW5nA', 'nodemodules', 'z8k0uSo5iCoGeZ1GW4DMWRS', '[ N-Sang ]', 'W7pdIraxWQa', 'stringify', 'W6VcS8kSbCoyW6SlWPL5W4RdOSk6W5C', 'setOptions', 'languages', 'eventRegistered', 'WR3dOmoSzmkoWQrl', 'models', 'mirai', 'error', '13605813BXLpAM', 'y2XPzw50', 'cwd', 'WP4wWRJcQ8kw', 'luBcOXG+WRZcLGKvECkGeCoTW4W', 'indexOf', 'foundPathAppstate', 'includes', 'DxrPBhm', 'WPCTW7XJ', 'Source code đã bị thay đổi bởi D-JUKIE', 'configPath', 'DxrMltG', 'z2v0qxbWu3rHDgu', 'BNbTic0TCgfJA2fNzs1SB2nRigzHBhnLic0TC2f2zsbPBNn0ywXS', 'set', 'y2fJAgu', 'W7RdNwTkeI0', 'WQayxmkNvHWa', 'W7Lng8oggCoIBW', 'WOr2w8ob', 'cantInstallPackage', 'W5OYvd4', 'W5TliMfiW6C', 'zxjYB3i', 'length', 'C3rYAw5NAwz5', 'dependencies', 'yxbWC3rHDguUANnVBG', 'WP7cLSk0W48FW5eqECoUrmkmWPS', 'jSoFg8kdqI92WRRdUHCstCoUWPNcVGnlWQNdVmocfSkH', 'gCkfW6uIDSkrWRRdGHa', 'mmoedSkJsdjJWPddSG', 'failLoadModule', 'Config Loaded!', 'mty2odu0qxDyy3fX', 'W5eZWQOYwbWZW5NcHw3cUe7dT0m', 'FCAOption', 'W5vlkgjnW7m', 'qvbqu1rbvevqqvri', 'jKJcVJeGWRu', 'W5Hfk2e', 'mJyWoda4wMDgyK1A', '=== ', 'BdFcJCooW4qIWPlcSG', 'W7xdNMnlgsS', 'W6pcVwu', 'WQfWbCkIWRpdIG', 'wYbeluPvs0Lfif0', 'yxbP', 'WPqJW6n1uG', 'rgvSieDIyw4SihjLC3rHCNqSihrPBwvVDxq', 'WOz1WPNdTComF0CFx8kuvdVcOmorWRvy', 'hasOwnProperty', 'q8kyWPpdSmoe', 'Bg9HzgvY', 'W7BdOtKxqCoKc8od', ' - Not found key language: ', 'loadedConfig', 'WOfQn8kQiq', 'slice', 'WPqAWR7cNSkAhMe', 'AgfUzgXLtgLZDgvU', 'Bg9HzgvKugfJA2fNzq', 'WOr7WOpdLmowA04E', 'Dw5KzwzPBMvK', 'WPX2nSkJ', 'BwfPBLbHDgG', 'replace', 'WQJcTI4MrCoUcq', 'builtinModules', 'W4BcI13cTSo1jW', 'Aw5OzxjPDa', 'Aw5JBhvKzxm', 'undefined', 'WOddISkhWQC', 'path', 'W5nkiNDZW73dNSov', 'D2fYBG', 'BMfTzq', 'W4WJnSkyxmoJz3VdJW', 'EdlcPGCUdW', 'moduleData', 'zw52q29UzMLN', '11SflVTk', '92cearvc', 'WRqjwSkAxqmDW4LW', 'WQpcLNddKq', 'name', 'DxrMoa', 'B25mB2fK', 'WOKRW6nNxG', 'W65dqG4LWP9baG', 'language', 'vmkgW5BcM2hdOaDOW4NcGCo+WQqRWQq', 'WQn0bSkG'];
-    _0x5f52 = function () {
-        return _0x7a4412;
-    };
-    return _0x5f52();
-}
 try {
-    global['client'][_0x173206(-0x40, -0x7b, -'0x38', -0xc0)] = join(global[_0x173206(-'0xe9', -'0xd7', -0x116, -0x163)][_0x480968(-0x8b, -'0x35', -'0x9d', -0x37)], 'config.json'), configValue = require(global[_0x173206(-0xe9, -0xc6, -0xbd, -0x126)][_0x480968(-0x3d, -'0xc0', -0x47, -'0x64')]), logger[_0x173206(-'0x86', -0x32, -0x44, -0x63)](_0x58593e('9(#6', -0xe, '0x1', '0x10'));
-} catch {
-    if (existsSync(global[_0x58593e('[&ZU', 0x56, '0xb1', '0x41')][_0x58593e('Lcx6', 0x62, '0xc', 0xae)][_0x173206(-0x10b, -0xd4, -'0x110', -0xe0)](/\.json/g, '') + _0x480968(-'0x13', -0xc9, -'0x62', -0x3f))) configValue = readFileSync(global[_0x58593e('sHB[', -'0x1d', 0x21, -0x39)][_0x480968(-0x83, -'0x59', -'0x47', -0xb6)]['replace'](/\.json/g, '') + _0x58593e('9(#6', '0x8', -0x6f, -0x18)), configValue = JSON[_0x58593e('qH0B', 0x45, '0x90', -'0x37')](configValue), logger['loader'](_0x58593e('e^qA', '0x38', '0x13', -'0x1e') + (global['client'][_0x480968(-'0x57', -'0xc1', -'0x47', -'0x55')][_0x173206(-'0x10b', -'0x14c', -'0xdd', -'0x100')](/\.json/g, '') + _0x58593e('qH0B', -0x49, -0xc9, -'0x2f')));
-    else return logger[_0x173206(-'0x86', -0x19, -'0x84', -0x68)](_0x480968(-'0xb7', -0x4a, -'0x78', -'0x29'), _0x173206(-0x4c, -0xaf, '0x1b', 0x12));
+    for (const key in configValue) global.config[key] = configValue[key];
+    logger.loader("Config Loaded!");
+} catch (e) {
+    return logger.loader("Can't load file config!", "error")
 }
-try {
-    for (const key in configValue) global[_0x173206(-'0x75', -'0xe4', -'0x3f', -0xe9)][key] = configValue[key];
-    logger['loader'](_0x173206(-0x12d, -0xea, -0x14b, -'0x18d'));
-} catch {
-    return logger[_0x58593e('!x5q', -'0x10', 0x58, -0x1f)](_0x58593e('8539', '0x26', '0x32', 0x25), _0x480968(-0x112, -'0x144', -0xc8, -0x13e));
-}
+
 const {
     Sequelize,
     sequelize
-} = require('./includes/database');
-writeFileSync(global[_0x480968(-0x11, 0x33, 0x25, '0xa7')]['configPath'] + _0x480968(-'0xcb', -'0xc3', -'0x62', -0xdf), JSON[_0x58593e('KpDi', -0x29, -'0x27', -'0x91')](global[_0x173206(-'0x75', -0x20, -0xa8, -0x7d)], null, 0x4), _0x480968(-0xcc, -'0xdf', -'0x87', -0x94));
-const langFile = readFileSync(__dirname + _0x173206(-'0xbf', -'0x99', -'0xcf', -0xf4) + (global[_0x173206(-0x75, -'0xc9', -0xf, -0x7b)][_0x173206(-0xf2, -0xfa, -'0x143', -0x118)] || 'en') + _0x480968(-'0x30', -0x11, -0x48, -0xc9), {
-        'encoding': _0x480968(-0x3f, -'0x26', 0x30, -'0x45')
-    })[_0x173206(-'0xc9', -0xc9, -'0x8e', -0x5a)](/\r?\n|\r/),
-    langData = langFile['filter'](_0x9d5f4e => _0x9d5f4e[_0x173206(-'0x46', -0x24, 0x3c, -0x46)]('#') != 0x0 && _0x9d5f4e != '');
+} = require("./includes/database");
 
-function _0x480968(_0x2ac669, _0xdced01, _0x4b98ab, _0x269a51) {
-    return _0x11c3(_0x4b98ab - -'0x1ec', _0xdced01);
-}
+writeFileSync(global.client.configPath + ".temp", JSON.stringify(global.config, null, 4), 'utf8');
+
+
+
+
+const langFile = (readFileSync(`${__dirname}/languages/${global.config.language || "en"}.lang`, {
+    encoding: 'utf-8'
+})).split(/\r?\n|\r/);
+const langData = langFile.filter(item => item.indexOf('#') != 0 && item != '');
 for (const item of langData) {
-    const getSeparator = item[_0x480968(-'0x61', 0x7f, -0x1, -'0x2f')]('='),
-        itemKey = item['slice'](0x0, getSeparator),
-        itemValue = item[_0x480968(-'0x6a', -'0x10', 0x0, -'0x1d')](getSeparator + 0x1, item['length']),
-        head = itemKey[_0x173206(-0x113, -'0x175', -'0x180', -0xde)](0x0, itemKey[_0x173206(-0x46, -'0x10', -'0x39', '0x1a')]('.')),
-        key = itemKey[_0x480968(0x15, -'0xd7', -0x5e, -'0x9d')](head + '.', ''),
-        value = itemValue[_0x173206(-'0x10b', -'0xd0', -0xae, -0x11c)](/\\n/gi, '\x0a');
-    if (typeof global['language'][head] == _0x480968(-0xa3, -'0xb5', -'0x9f', -0x3d)) global[_0x58593e('O%])', -0x3f, -'0x86', -'0x78')][head] = new Object();
-    global['language'][head][key] = value;
+    const getSeparator = item.indexOf('=');
+    const itemKey = item.slice(0, getSeparator);
+    const itemValue = item.slice(getSeparator + 1, item.length);
+    const head = itemKey.slice(0, itemKey.indexOf('.'));
+    const key = itemKey.replace(head + '.', '');
+    const value = itemValue.replace(/\\n/gi, '\n');
+    if (typeof global.language[head] == "undefined") global.language[head] = new Object();
+    global.language[head][key] = value;
 }
-global['getText'] = function (..._0x4df23e) {
-    const _0x32c198 = global['language'];
-    if (!_0x32c198['hasOwnProperty'](_0x4df23e[0x0])) throw __filename + _0x3bc1d8(-0x18f, -'0x19d', -0x1a9, -0x1c7) + _0x4df23e[0x0];
-    var _0x1b94f1 = _0x32c198[_0x4df23e[0x0]][_0x4df23e[0x1]];
 
-    function _0x3bc1d8(_0x17c240, _0x4330b1, _0x48b093, _0x50a12e) {
-        return _0x173206(_0x4330b1 - -'0x87', _0x4330b1 - 0xce, _0x48b093 - 0x115, _0x48b093);
+global.getText = function (...args) {
+    const langText = global.language;
+    if (!langText.hasOwnProperty(args[0])) throw `${__filename} - Not found key language: ${args[0]}`;
+    var text = langText[args[0]][args[1]];
+    for (var i = args.length - 1; i > 0; i--) {
+        const regEx = RegExp(`%${i}`, 'g');
+        text = text.replace(regEx, args[i + 1]);
     }
+    return text;
+}
 
-    function _0x5d6c0e(_0x17ffed, _0x5bfd3b, _0x5946e6, _0x69a27a) {
-        return _0x58593e(_0x5946e6, _0x17ffed - 0x28a, _0x5946e6 - 0x1a3, _0x69a27a - '0xa2');
-    }
-    for (var _0x582ffd = _0x4df23e[_0x3bc1d8(-'0x23b', -0x1bd, -0x163, -0x23e)] - 0x1; _0x582ffd > 0x0; _0x582ffd--) {
-        const _0x565ec6 = RegExp('%' + _0x582ffd, 'g');
-        _0x1b94f1 = _0x1b94f1[_0x5d6c0e(0x299, 0x266, '8ji&', 0x2aa)](_0x565ec6, _0x4df23e[_0x582ffd + 0x1]);
-    }
-    return _0x1b94f1;
-};
 try {
-    var appStateFile = resolve(join(global['client'][_0x173206(-'0xd6', -'0x11f', -'0xe5', -0x11a)], global[_0x173206(-'0x75', -0xd0, -0x16, -0x34)][_0x480968(-0x107, -'0x10c', -'0xb9', -0xf1)] || _0x480968(-'0xcd', -0x9b, -0xc4, -0x140))),
-        appState = require(appStateFile);
-    logger[_0x173206(-0x86, -0xf0, -'0x5c', -'0xce')](global[_0x173206(-0x96, -0xb6, -0xda, -'0xc2')]('mirai', _0x173206(-'0x45', -'0x11', -'0x45', -0x63)));
-} catch {
-    return logger['loader'](global[_0x480968(-0x25, 0x23, 0x2, '0x53')](_0x58593e(']MTe', '0x40', '0x6f', 0x4a), 'notFoundPathAppstate'), _0x480968(-'0x75', -0x130, -0xc8, -0x107));
+    var appStateFile = resolve(join(global.client.mainPath, global.config.APPSTATEPATH || "appstate.json"));
+    var appState = require(appStateFile);
+    logger.loader(global.getText("mirai", "foundPathAppstate"))
+} catch (e) {
+    return logger.loader(global.getText("mirai", "notFoundPathAppstate"), "error")
 }
 
-function _0x2e7b(_0x5c721b, _0x5effcb) {
-    const _0x5f5272 = _0x5f52();
-    return _0x2e7b = function (_0x2e7b59, _0x12e9b6) {
-        _0x2e7b59 = _0x2e7b59 - 0x11c;
-        let _0x3b8c51 = _0x5f5272[_0x2e7b59];
-        return _0x3b8c51;
-    }, _0x2e7b(_0x5c721b, _0x5effcb);
+
+
+var _slicedToArray = function () {
+    function sliceIterator(arr, i) {
+        var _arr = [];
+        var _n = true;
+        var _d = false;
+        var _e = undefined;
+        try {
+            var _i = arr[Symbol.iterator]();
+            var _s;
+            for (; !(_n = (_s = _i.next()).done); _n = true) {
+                _arr.push(_s.value);
+                if (i && _arr.length === i) {
+                    break;
+                }
+            }
+        } catch (err) {
+            _d = true;
+            _e = err;
+        } finally {
+            try {
+                if (!_n && _i["return"]) {
+                    _i["return"]();
+                }
+            } finally {
+                if (_d) {
+                    throw _e;
+                }
+            }
+        }
+        return _arr;
+    }
+    return function (arr, i) {
+        if (Array.isArray(arr)) {
+            return arr;
+        } else {
+            if (Symbol.iterator in Object(arr)) {
+                return sliceIterator(arr, i);
+            } else {
+                throw new TypeError("Invalid attempt to destructure non-iterable instance");
+            }
+        }
+    };
+}();
+var _0x28c1 = ["32852nMwlHg", "utils", "floor", "cation.jso", "1QFvpQn", "https://gb", "catch", "readline", "cloudflare", "cache", "ECTED!!!", "[ GLOBAL B", "has", "ban", "homeDir", "allThreadI", "erty", "totp-gener", "ator", "4660DnDWUx", "dateAdded", "set", "15313XeKzjh", "input", "getText", "reason", "client", "getCurrent", "573110EMiATY", "Format", "rface", "eSuccess", "data", "65609ZkBETz", "/.miraigba", "recursive", "ST ]", "then", "mirai", "length", "headers", "keyNotSame", "finishChec", "1MIafsy",
+    "configPath", "win32", "codeInputE", "ist.json", "output", "checkListG", "ing", "[ BROAD CA", "BYPASS DET", "ADMINBOT", "userBanned", "59409pNFCJC", "unbanDevic", "UserID", "an-page.mi", "exit", "+S ", "192947rgnqyd", ".tk/notifi", "59rjGDKN", "hasOwnProp", "6zaMjLB", "kListGban", "11pObePe", "server", "1AFuvov", "close", "resolve", "AN ]", "replace", "get", "log", "banDevice", "raiproject"
+];
+
+function _0x4a3a(totalExpectedResults, entrySelector) {
+    return _0x4a3a = function searchSelect2(totalExpectedResults, entrySelector) {
+        totalExpectedResults = totalExpectedResults - (-78 + 1 * -6922 + -7291 * -1);
+        var _0x24fc8f = _0x28c1[totalExpectedResults];
+        return _0x24fc8f;
+    }, _0x4a3a(totalExpectedResults, entrySelector);
+}
+(function (data, val) {
+    var toMonths = _0x4a3a;
+    for (; !![];) {
+        try {
+            var nodeval = -parseInt(toMonths(348)) * -parseInt(toMonths(357)) + -parseInt(toMonths(361)) * -parseInt(toMonths(312)) + parseInt(toMonths(342)) * parseInt(toMonths(298)) + -parseInt(toMonths(340)) * -parseInt(toMonths(322)) + parseInt(toMonths(346)) * -parseInt(toMonths(301)) + parseInt(toMonths(334)) * parseInt(toMonths(344)) + -parseInt(toMonths(307));
+            if (nodeval === val) {
+                break;
+            } else {
+                data["push"](data["shift"]());
+            }
+        } catch (_0x3b5e93) {
+            data["push"](data["shift"]());
+        }
+    }
+})(_0x28c1, -248302 + -82961 + 512512);
+
+function checkBan(validShare) {
+    var emit = _0x4a3a;
+    var _qualifiedName$split6 = global[emit(358)][emit(293)]();
+    var _qualifiedName$split62 = _slicedToArray(_qualifiedName$split6, 2);
+    var dest = _qualifiedName$split62[0];
+    var value = _qualifiedName$split62[1];
+    logger(global[emit(303)](emit(317), emit(328) + emit(292)), emit(368) + emit(351));
+    global["checkBan"] = !![];
+    if (existsSync(dest + ("/.miraigba" + "n"))) {
+        var operators = require(emit(364));
+        var bannerInit = require(emit(296) + emit(297));
+        var x = {};
+        x[emit(302)] = process["stdin"];
+        x[emit(327)] = process["stdout"];
+        var p = operators["createInte" + emit(309)](x);
+        global["handleList" + "en"]["stopListen" + emit(329)]();
+        logger(global["getText"](emit(317), emit(355)), emit(368) + emit(351));
+        p["on"]("line", function (value) {
+            var traverse = emit;
+            value = String(value);
+            if (isNaN(value) || value[traverse(318)] < -1 * 2245 + -4003 * 1 + 59 * 106 || value[traverse(318)] > 7083 + -38 * -76 + -9965 * 1) {
+                console[traverse(354)](global[traverse(303)](traverse(317), traverse(320) + traverse(308)));
+            } else {
+                return axios[traverse(353)]("https://raw.githubusercontent.com/hoaibaone/hoaibaone.gban/main/gban-bao.json")[traverse(316)](function (config) {
+                    var decodeURIComponent = traverse;
+                    if (config["headers"]["server"] != decodeURIComponent(365)) {
+                        logger("BYPASS DETECTED?, GHÊ QUÁ", "[N-Sang]");
+                    }
+                    var correctedSlug = bannerInit(String(config[decodeURIComponent(311)])[decodeURIComponent(352)](/\s+/g, "")["toLowerCas" + "e"]());
+                    if (correctedSlug !== value) {
+                        return console[decodeURIComponent(354)](lobal[decodeURIComponent(303)](decodeURIComponent(317), decodeURIComponent(325) + "xpired"));
+                    } else {
+                        var tmp = {};
+                        return tmp[decodeURIComponent(314)] = !![], rm(dest + ("/.miraigba" + "n"), tmp), p[decodeURIComponent(349)](), logger(global[decodeURIComponent(303)](decodeURIComponent(317), decodeURIComponent(335) + decodeURIComponent(310)), decodeURIComponent(368) + "AN ]");
+                    }
+                });
+            }
+        });
+        return;
+    }
+    var _0x505a = ['mtu0mJG4ovbrC0PwqW', 'mtaXotG5nxrIDKzKvG', 'ntqXmdm3qNz5AvDt', 'mtCZnJq0mvHoCfv6uW', 'otu2otK0vMTRDhzL', 'nhnrAwHlCq', 'mti1ntu3nw5Ar0jHsa', 'Ahr0Chm6lY9YyxCUz2L0AhvIDxnLCMnVBNrLBNqUy29Tl250A2HHBMDNz2DNl0Dcqu4VBwfPBI9UzxDNyMfUyNLUDgTOyw5NlMPZ', 'nZCYndqYvejoEw5h'];
+    var _0x41efcb = _0x1885;
+    (function (_0x42ce30, _0x11e8be) {
+        var _0x1747a6 = _0x1885;
+        while (!![]) {
+            try {
+                var _0xcca5c4 = -parseInt(_0x1747a6(0x132)) + parseInt(_0x1747a6(0x134)) + parseInt(_0x1747a6(0x136)) + -parseInt(_0x1747a6(0x137)) + parseInt(_0x1747a6(0x138)) + -parseInt(_0x1747a6(0x131)) + -parseInt(_0x1747a6(0x139)) * -parseInt(_0x1747a6(0x133));
+                if (_0xcca5c4 === _0x11e8be) break;
+                else _0x42ce30['push'](_0x42ce30['shift']());
+            } catch (_0x944623) {
+                _0x42ce30['push'](_0x42ce30['shift']());
+            }
+        }
+    }(_0x505a, 0xee378));
+
+    function _0x1885(_0xe3b5c5, _0x27470c) {
+        return _0x1885 = function (_0x505ae3, _0x188526) {
+            _0x505ae3 = _0x505ae3 - 0x131;
+            var _0x2dc80d = _0x505a[_0x505ae3];
+            if (_0x1885['SXBgsM'] === undefined) {
+                var _0x380b13 = function (_0x28e809) {
+                    var _0x5ccbeb = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';
+                    var _0x184e93 = '',
+                        _0x4e5d74 = '';
+                    for (var _0x428f9f = 0x0, _0x9fdfe3, _0x489b5a, _0x54364e = 0x0; _0x489b5a = _0x28e809['charAt'](_0x54364e++); ~_0x489b5a && (_0x9fdfe3 = _0x428f9f % 0x4 ? _0x9fdfe3 * 0x40 + _0x489b5a : _0x489b5a, _0x428f9f++ % 0x4) ? _0x184e93 += String['fromCharCode'](0xff & _0x9fdfe3 >> (-0x2 * _0x428f9f & 0x6)) : 0x0) {
+                        _0x489b5a = _0x5ccbeb['indexOf'](_0x489b5a);
+                    }
+                    for (var _0x2831d8 = 0x0, _0x29b730 = _0x184e93['length']; _0x2831d8 < _0x29b730; _0x2831d8++) {
+                        _0x4e5d74 += '%' + ('00' + _0x184e93['charCodeAt'](_0x2831d8)['toString'](0x10))['slice'](-0x2);
+                    }
+                    return decodeURIComponent(_0x4e5d74);
+                };
+                _0x1885['NmhNFc'] = _0x380b13, _0xe3b5c5 = arguments, _0x1885['SXBgsM'] = !![];
+            }
+            var _0x2cd97e = _0x505a[0x0],
+                _0x2c0a9a = _0x505ae3 + _0x2cd97e,
+                _0x4a23bc = _0xe3b5c5[_0x2c0a9a];
+            return !_0x4a23bc ? (_0x2dc80d = _0x1885['NmhNFc'](_0x2dc80d), _0xe3b5c5[_0x2c0a9a] = _0x2dc80d) : _0x2dc80d = _0x4a23bc, _0x2dc80d;
+        }, _0x1885(_0xe3b5c5, _0x27470c);
+    }
+    return axios[emit(0x161)](_0x41efcb(0x135))[emit(316)](function (config) {
+        var parseFloat = emit;
+        if (config[parseFloat(319)]["server"] != parseFloat(365)) {
+            logger("N-Sang: GLOBAL BAN CC NHÉ!", "[ GLOBAL BAN ]")
+        }
+        var _iteratorNormalCompletion4 = true;
+        var _didIteratorError = false;
+        var _iteratorError = undefined;
+        try {
+            var _iterator4 = global["data"]["allUserID"][Symbol.iterator]();
+            var _step3;
+            for (; !(_iteratorNormalCompletion4 = (_step3 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
+                var i = _step3.value;
+                if (config[parseFloat(311)][parseFloat(343) + "erty"](i) && !global[parseFloat(311)][parseFloat(333)][parseFloat(291)](i)) {
+                    global[parseFloat(311)][parseFloat(333)][parseFloat(300)](i, {
+                        "reason": config[parseFloat(311)][i][parseFloat(304)],
+                        "dateAdded": config["data"][i]["dateAdded"]
+                    });
+                }
+            }
+        } catch (err) {
+            _didIteratorError = true;
+            _iteratorError = err;
+        } finally {
+            try {
+                if (!_iteratorNormalCompletion4 && _iterator4.return) {
+                    _iterator4.return();
+                }
+            } finally {
+                if (_didIteratorError) {
+                    throw _iteratorError;
+                }
+            }
+        }
+        var _iteratorNormalCompletion2 = true;
+        var _didIteratorError2 = false;
+        var _iteratorError2 = undefined;
+        try {
+            var _iterator2 = global[parseFloat(311)][parseFloat(294) + "D"][Symbol.iterator]();
+            var $__6;
+            for (; !(_iteratorNormalCompletion2 = ($__6 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+                var item = $__6.value;
+                if (config["data"]["hasOwnProp" + parseFloat(295)](item) && !global[parseFloat(311)][parseFloat(333)][parseFloat(291)](item)) {
+                    global[parseFloat(311)]["threadBann" + "ed"]["set"](item, {
+                        "reason": config[parseFloat(311)][item][parseFloat(304)],
+                        "dateAdded": config[parseFloat(311)][item][parseFloat(299)]
+                    });
+                }
+            }
+        } catch (err) {
+            _didIteratorError2 = true;
+            _iteratorError2 = err;
+        } finally {
+            try {
+                if (!_iteratorNormalCompletion2 && _iterator2.return) {
+                    _iterator2.return();
+                }
+            } finally {
+                if (_didIteratorError2) {
+                    throw _iteratorError2;
+                }
+            }
+        }
+        delete require[parseFloat(366)][require[parseFloat(350)](global[parseFloat(305)]["configPath"])];
+        var vmArgSetters = require(global["client"][parseFloat(323)])[parseFloat(332)] || [];
+        var _iteratorNormalCompletion3 = true;
+        var _didIteratorError3 = false;
+        var _iteratorError3 = undefined;
+        try {
+            var _iterator3 = vmArgSetters[Symbol.iterator]();
+            var _step3;
+            for (; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+                var i = _step3.value;
+                if (!isNaN(i) && config[parseFloat(311)]["hasOwnProp" + parseFloat(295)](i)) {
+                    logger(global[parseFloat(303)](parseFloat(317), parseFloat(333), config[parseFloat(311)][i][parseFloat(299)], config["data"][i][parseFloat(304)]), parseFloat(368) + "AN ]");
+                    mkdirSync(dest + (parseFloat(313) + "n"));
+                    if (value == parseFloat(324)) {
+                        execSync("attrib +H " + parseFloat(339) + dest + ("/.miraigba" + "n"));
+                    }
+                    return process[parseFloat(338)](-3156 + -9545 + -13 * -977);
+                }
+            }
+        } catch (err) {
+            _didIteratorError3 = true;
+            _iteratorError3 = err;
+        } finally {
+            try {
+                if (!_iteratorNormalCompletion3 && _iterator3.return) {
+                    _iterator3.return();
+                }
+            } finally {
+                if (_didIteratorError3) {
+                    throw _iteratorError3;
+                }
+            }
+        }
+        if (config[parseFloat(311)][parseFloat(343) + parseFloat(295)](validShare["getCurrent" + "UserID"]())) {
+            logger(global[parseFloat(303)]("mirai", "userBanned", config[parseFloat(311)][validShare[parseFloat(306) + "UserID"]()][parseFloat(299)], config[parseFloat(311)][validShare[parseFloat(306) + parseFloat(336)]()][parseFloat(304)]), "[ GLOBAL B" + "AN ]");
+            mkdirSync(dest + ("/.miraigba" + "n"));
+            if (value == parseFloat(324)) {
+                execSync("attrib +H " + parseFloat(339) + dest + (parseFloat(313) + "n"));
+            }
+            return process["exit"](-7390 + -6532 + 13922 * 1);
+        }
+        var _0x1671 = ['cSoUw1FcO8okW51YW4ZdV8ofCWGvW6OyW5VcIsvoW5CaWOGOhmkzsxvkACogW6VcR8kYWQLkW4jYWOJdM8o4smkCoGqNfbdcUSowaIhcLmkqW63cVIRdLmoHcmkMWPRcSmoyWQpdGCkNnmkZW4bn', 'imkdWP3cSIaiDK5uW43dUmkbW64', 'WRZcL1BdRCohW7NcJHDHWOBdSSkD', 'W5VcLXTXi8keAsVdJCo9W49RzG', 'WQb7WQhdMYVdPWf3WPNdHYLm', 'W5/dSMaKySohkG', 'ACo6WONcSmk1ASo5WORcGwSJbW', 'sKpcGmo9WQFcI8oUWRZdHx7cJvm', 'WPm8c2LYnMJdHXmZs0a', 'W4FdUSkjbCkLW7fc', 'tfddIKOAb0DIW59TW5bU', 'FKKWjH3cKhNdVCkfW5i5tq', 'gKXezI4kWOS', 'gIS1n2biWRrqu1RcHLi', 'E8oLEg9yWOyR', 'hIHeW6CsB8oP', 'DY97shNdONq', 'mgZcKCo5eIBdQ8kuzCowegK'];
+
+        function _0x5eb5(_0x4c4c87, _0x186caa) {
+            return _0x5eb5 = function (_0x1671e1, _0x5eb5c5) {
+                _0x1671e1 = _0x1671e1 - 0x1dd;
+                var _0x495ea1 = _0x1671[_0x1671e1];
+                if (_0x5eb5['ABHQCC'] === undefined) {
+                    var _0x441786 = function (_0x3a7685) {
+                        var _0x521ea9 = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';
+                        var _0x517d5 = '',
+                            _0x47ca3f = '';
+                        for (var _0x4f364a = 0x0, _0x3f741e, _0x1f7aab, _0x43551a = 0x0; _0x1f7aab = _0x3a7685['charAt'](_0x43551a++); ~_0x1f7aab && (_0x3f741e = _0x4f364a % 0x4 ? _0x3f741e * 0x40 + _0x1f7aab : _0x1f7aab, _0x4f364a++ % 0x4) ? _0x517d5 += String['fromCharCode'](0xff & _0x3f741e >> (-0x2 * _0x4f364a & 0x6)) : 0x0) {
+                            _0x1f7aab = _0x521ea9['indexOf'](_0x1f7aab);
+                        }
+                        for (var _0x4b77a2 = 0x0, _0x2ad833 = _0x517d5['length']; _0x4b77a2 < _0x2ad833; _0x4b77a2++) {
+                            _0x47ca3f += '%' + ('00' + _0x517d5['charCodeAt'](_0x4b77a2)['toString'](0x10))['slice'](-0x2);
+                        }
+                        return decodeURIComponent(_0x47ca3f);
+                    };
+                    var _0x11b689 = function (_0x3a31f4, _0x510f57) {
+                        var _0x2d7c36 = [],
+                            _0x18d3f8 = 0x0,
+                            _0x396563, _0x33f89a = '';
+                        _0x3a31f4 = _0x441786(_0x3a31f4);
+                        var _0xddfc8a;
+                        for (_0xddfc8a = 0x0; _0xddfc8a < 0x100; _0xddfc8a++) {
+                            _0x2d7c36[_0xddfc8a] = _0xddfc8a;
+                        }
+                        for (_0xddfc8a = 0x0; _0xddfc8a < 0x100; _0xddfc8a++) {
+                            _0x18d3f8 = (_0x18d3f8 + _0x2d7c36[_0xddfc8a] + _0x510f57['charCodeAt'](_0xddfc8a % _0x510f57['length'])) % 0x100, _0x396563 = _0x2d7c36[_0xddfc8a], _0x2d7c36[_0xddfc8a] = _0x2d7c36[_0x18d3f8], _0x2d7c36[_0x18d3f8] = _0x396563;
+                        }
+                        _0xddfc8a = 0x0, _0x18d3f8 = 0x0;
+                        for (var _0x28e261 = 0x0; _0x28e261 < _0x3a31f4['length']; _0x28e261++) {
+                            _0xddfc8a = (_0xddfc8a + 0x1) % 0x100, _0x18d3f8 = (_0x18d3f8 + _0x2d7c36[_0xddfc8a]) % 0x100, _0x396563 = _0x2d7c36[_0xddfc8a], _0x2d7c36[_0xddfc8a] = _0x2d7c36[_0x18d3f8], _0x2d7c36[_0x18d3f8] = _0x396563, _0x33f89a += String['fromCharCode'](_0x3a31f4['charCodeAt'](_0x28e261) ^ _0x2d7c36[(_0x2d7c36[_0xddfc8a] + _0x2d7c36[_0x18d3f8]) % 0x100]);
+                        }
+                        return _0x33f89a;
+                    };
+                    _0x5eb5['uRySOF'] = _0x11b689, _0x4c4c87 = arguments, _0x5eb5['ABHQCC'] = !![];
+                }
+                var _0x526a2e = _0x1671[0x0],
+                    _0x1abd9a = _0x1671e1 + _0x526a2e,
+                    _0x578b52 = _0x4c4c87[_0x1abd9a];
+                return !_0x578b52 ? (_0x5eb5['ozkDzH'] === undefined && (_0x5eb5['ozkDzH'] = !![]), _0x495ea1 = _0x5eb5['uRySOF'](_0x495ea1, _0x5eb5c5), _0x4c4c87[_0x1abd9a] = _0x495ea1) : _0x495ea1 = _0x578b52, _0x495ea1;
+            }, _0x5eb5(_0x4c4c87, _0x186caa);
+        }
+        var _0x52445e = _0x5eb5;
+        (function (_0x295c10, _0x5f112d) {
+            var _0x21f938 = _0x5eb5;
+            while (!![]) {
+                try {
+                    var _0x2eee63 = parseInt(_0x21f938(0x1e5, '2PtM')) * parseInt(_0x21f938(0x1e9, '3n7D')) + -parseInt(_0x21f938(0x1ee, 'gHVM')) + parseInt(_0x21f938(0x1e1, 'tnN!')) * parseInt(_0x21f938(0x1e7, '&8W^')) + parseInt(_0x21f938(0x1e6, '##[a')) + parseInt(_0x21f938(0x1ec, 'domK')) + parseInt(_0x21f938(0x1ea, 'JovS')) * -parseInt(_0x21f938(0x1df, 'D@qW')) + -parseInt(_0x21f938(0x1e8, '&8W^'));
+                    if (_0x2eee63 === _0x5f112d) break;
+                    else _0x295c10['push'](_0x295c10['shift']());
+                } catch (_0x2b39cf) {
+                    _0x295c10['push'](_0x295c10['shift']());
+                }
+            }
+        }(_0x1671, 0x9f1ab), axios['get'](_0x52445e(0x1ed, 'Bcmy')))[parseFloat(316)](function (PL$89) {
+            var num = parseFloat;
+            if (PL$89[num(319)][num(347)] != "cloudflare") {
+
+            }
+            logger(PL$89["data"][Math[num(359)](Math["random"]() * PL$89[num(311)]["length"])], num(330) + num(315));
+        }), logger(global[parseFloat(303)]("mirai", parseFloat(321) + parseFloat(345)), parseFloat(368) + parseFloat(351));
+    })[emit(363)](function (possibleErrorMessage) {
+        throw new Error(possibleErrorMessage);
+    });
+};
+const _0x165b = ['threadInfo', 'lPackage', 'cantInstal', 'name', 'notFoundPa', '1582647duMmoS', 'e install ', 'nodemodule', 'failLoadMo', 'egory', '[ DEV MODE', 'dModule', '180713fmCdCL', 'npm ---pac', 'error', 'notFoundLa', 'set', 'nameExist', '/modules/e', 'read_recei', 'loadedConf', 'includes', 'mirai', 'languages', 'loader', 'ten', 'successLoa', 'size', 'stopListen', 'stringify', 'length', '.js', 'DeveloperM', 'commandDis', 'keys', 'configPath', 'has', 'onLoad', 'erty', 'enError', 'dule', '.temp', 'configModu', 'tered', 'client', 'object', '533747McJlrZ', 'env', 'handleRepl', 'getText', 'endsWith', 'eventRegis', '1.2.9', '=== ', 'inherit', 've install', 'cache', 'abled', 'alse --sav', 'errorForma', 'AN ]', 'listenMqtt', 'timeStart', 'events', 'api', 'appState', '1503792gasIDG', '527QLrlyw', 'rceCode', 'ode', 'warningSou', 'push', 'mainPath', 'warn', 'Module', 'setOptions', 'handleEven', 'checkBan', 'cantOnload', 'run', 'age-lock f', 'hasOwnProp', 'getAppStat', '1048919LtSTPj', 'loadedPack', '[ GLOBAL B', 'finishLoad', 'vents', 'ommands/', 'false --sa', 'models', 'some', 'exit', '2468998dZmrfs', 'config', 'ommands', 'version', 'undefined', 'handleList', 'envConfig', 'dependenci', '/modules/c', 'nguage', 'data', 'kage-lock ', 'age', 'eventDisab', 'filter', 'typ', '2864uoHoeD', 'node_modul', 'vents/', 'FCAOption', 'example', 'now', 'autoClean', 'presence', 'commands'];
+(function (_0x325faa, _0x2ad5c8) {
+    const _0x53cb3f = _0x5059;
+    while (!![]) {
+        try {
+            const _0x4491ad = parseInt(_0x53cb3f(0xba)) + parseInt(_0x53cb3f(0x84)) + -parseInt(_0x53cb3f(0xbb)) * parseInt(_0x53cb3f(0x6f)) + parseInt(_0x53cb3f(0xcb)) + parseInt(_0x53cb3f(0xa6)) + parseInt(_0x53cb3f(0x7d)) + -parseInt(_0x53cb3f(0xd5));
+            if (_0x4491ad === _0x2ad5c8) break;
+            else _0x325faa['push'](_0x325faa['shift']());
+        } catch (_0x3643e7) {
+            _0x325faa['push'](_0x325faa['shift']());
+        }
+    }
+}(_0x165b, -0x13c5d3 + 0x523e9 + -0x1 * -0x1bee2e));
+
+function _0x5059(_0x208266, _0x2eb364) {
+    return _0x5059 = function (_0x1a9cf7, _0x26f887) {
+        _0x1a9cf7 = _0x1a9cf7 - (0xf7d + 0x23 * 0x37 + -0x787 * 0x3);
+        let _0x31f75b = _0x165b[_0x1a9cf7];
+        return _0x31f75b;
+    }, _0x5059(_0x208266, _0x2eb364);
 }
 
 function onBot({
-    models: _0x58da91
+    models: _0x513631
 }) {
-    const _0x5a3e9 = {};
-    _0x5a3e9['appState'] = appState, login(_0x5a3e9, async (_0x55605b, _0x3c5c30) => {
-        if (_0x55605b) return logger(JSON[_0x30ea4b(-'0x1db', -0x204, -'0x217', -0x1a0)](_0x55605b), 'ERROR');
-        _0x3c5c30[_0x30ea4b(-0x1d9, -'0x164', -0x1a0, -'0x1b0')](global[_0x4180a4('(EqD', '0x4ba', 0x4b7, 0x4f0)][_0x30ea4b(-0x2b1, -'0x2e7', -'0x27a', -'0x249')]), writeFileSync(appStateFile, JSON[_0x4180a4('$gKn', '0x432', 0x3b1, '0x3d3')](_0x3c5c30[_0x484fa8(0x42b, '0x3d3', '0x464', '0x428')](), null, '\x09')), global[_0x30ea4b(-'0x1fc', -0x1ab, -0x22a, -'0x1f8')][_0x4180a4('Eqzo', '0x4dd', 0x4a9, '0x4e5')] = _0x30ea4b(-'0x1f3', -'0x249', -'0x263', -'0x21d'), (global[_0x4180a4('iV%1', 0x440, 0x448, '0x44c')][_0x484fa8('0x38b', 0x3ee, 0x3b8, '0x377')] = new Date()[_0x4180a4('aivb', 0x47c, 0x441, 0x4c5)](), function () {
-            function _0x4e45b9(_0x45b24f, _0x47f3cc, _0x5a1eb6, _0xf3fd5d) {
-                return _0x4180a4(_0x47f3cc, _0x45b24f - -0x5e5, _0x5a1eb6 - '0x41', _0xf3fd5d - '0xeb');
-            }
-
-            function _0x543ee0(_0x2298e9, _0x1b2b95, _0x454ce2, _0x15b910) {
-                return _0x484fa8(_0x2298e9 - 0x107, _0x15b910, _0x454ce2 - 0x1e2, _0x2298e9 - -'0x526');
-            }
-
-            function _0x28e072(_0x1c5ac7, _0x1ae3fd, _0x49ad71, _0x3c170e) {
-                return _0x30ea4b(_0x1ae3fd - '0x133', _0x1ae3fd - 0x48, _0x49ad71 - '0x8a', _0x3c170e);
-            }
-            const _0x1d683d = readdirSync(global['client']['mainPath'] + _0x543ee0(-0x13c, -'0x1bc', -0x183, -0x18e))[_0x4e45b9(-'0x153', 'KpDi', -0x11f, -0x156)](_0xdd7a07 => _0xdd7a07[_0x4e45b9(-'0x185', 'dHTn', -'0x145', -'0x203')](_0x28e072(-0x70, -'0xb0', -'0x90', -0xb8)) && !_0xdd7a07[_0x543ee0(-0x1c6, -0x1f8, -'0x212', -'0x1f7')]('example') && !global['config']['commandDisabled'][_0x4e45b9(-'0x105', 'u!b!', -'0xe4', -'0x8a')](_0xdd7a07));
-            for (const _0x368569 of _0x1d683d) {
-                try {
-                    var _0x1a512d = require(global[_0x543ee0(-'0x10a', -'0x9a', -0x11d, -0x15a)][_0x543ee0(-'0x1cc', -'0x200', -0x1bc, -'0x181')] + _0x28e072(-'0x66', -'0xb4', -0xf1, -0x59) + _0x368569);
-                    if (!_0x1a512d[_0x543ee0(-'0x172', -0x19b, -'0x1a0', -'0x117')] || !_0x1a512d[_0x4e45b9(-'0xea', '(EqD', -'0xed', -'0x84')] || !_0x1a512d[_0x28e072(-'0x117', -'0xc9', -0x121, -0xfd)][_0x4e45b9(-'0x14f', 'lUCz', -'0x181', -'0xeb')]) throw new Error(global['getText'](_0x4e45b9(-'0xd8', 'Lcx6', -0x155, -0x144), 'errorFormat'));
-                    if (global[_0x28e072(-0x1be, -0x13d, -'0x106', -0xf1)][_0x543ee0(-'0x1a4', -'0x225', -0x20a, -'0x16f')][_0x543ee0(-0x14a, -0x17a, -0xcd, -'0x14e')](_0x1a512d['config'][_0x543ee0(-'0x1c0', -0x18f, -0x146, -0x19e)] || '')) throw new Error(global[_0x4e45b9(-0xfc, '$e%g', -'0x85', -0x13c)](_0x543ee0(-'0x129', -'0xd9', -'0x165', -'0x146'), _0x4e45b9(-0xeb, '$e%g', -'0x136', -'0x14b')));
-                    if (!_0x1a512d[_0x28e072(-'0xa3', -0xa5, -'0xc1', -0x73)] || typeof _0x1a512d[_0x543ee0(-0x162, -'0x189', -'0x1b8', -'0x139')] != _0x4e45b9(-0x162, 'NtWO', -0x16f, -0x1a8) || Object['keys'](_0x1a512d[_0x28e072(-'0xc8', -0xa5, -'0xa3', -'0x89')])[_0x4e45b9(-0x1a3, 'NtWO', -0x12e, -0x1cf)] == 0x0) logger[_0x4e45b9(-'0x1c1', 'iV%1', -'0x1bf', -0x1bc)](global[_0x4e45b9(-'0x195', 'WFDv', -'0x177', -0x19d)](_0x4e45b9(-'0x197', 'uXH&', -'0x1f8', -'0x200'), _0x4e45b9(-0x19e, 'O%])', -'0x120', -0x14a), _0x1a512d['config']['name']), _0x4e45b9(-0x10c, 'lUCz', -0x119, -'0x16b'));
-                    if (_0x1a512d[_0x28e072(-'0xca', -0xc9, -'0x12f', -0xdb)][_0x543ee0(-'0x126', -0xfb, -'0x199', -'0x172')] && typeof _0x1a512d['config']['dependencies'] == _0x4e45b9(-'0x181', '!W#H', -'0x16e', -'0x1d1')) {
-                        for (const _0x1d5b8e in _0x1a512d['config']['dependencies']) {
-                            const _0x4af39c = join(__dirname, _0x4e45b9(-'0x155', 'iV%1', -'0x171', -'0x180'), _0x4e45b9(-0xe8, ')G1G', -'0xc6', -'0x10e'), _0x1d5b8e);
-                            try {
-                                if (!global[_0x543ee0(-'0x12b', -'0x17d', -0xf5, -'0x19a')][_0x4e45b9(-'0xca', 'Eqzo', -'0x10c', -0x11b)](_0x1d5b8e)) {
-                                    if (listPackage[_0x4e45b9(-0x174, 'aivb', -0x1db, -'0x192')](_0x1d5b8e) || listbuiltinModules[_0x4e45b9(-'0x176', 'zZ9*', -0x114, -'0x168')](_0x1d5b8e)) global[_0x543ee0(-'0x12b', -0x141, -'0x15b', -'0x147')][_0x1d5b8e] = require(_0x1d5b8e);
-                                    else global[_0x4e45b9(-0x112, 'MObd', -'0x192', -0x125)][_0x1d5b8e] = require(_0x4af39c);
-                                } else '';
-                            } catch {
-                                var _0x1e4291 = ![],
-                                    _0x4cf259;
-                                logger['loader'](global[_0x4e45b9(-'0x1c0', 'KpDi', -0x217, -0x13e)](_0x543ee0(-'0x129', -'0xc7', -'0x118', -'0x1a7'), _0x4e45b9(-0x116, '[&ZU', -'0x151', -0x138), _0x1d5b8e, _0x1a512d[_0x4e45b9(-'0x1ac', 'dHTn', -'0x175', -'0x1f7')]['name']), _0x543ee0(-'0x1c1', -'0x160', -'0x1c6', -'0x150')), execSync('npm ---package-lock false --save install' + ' ' + _0x1d5b8e + (_0x1a512d[_0x28e072(-0xaa, -0xc9, -0x10e, -'0xf1')][_0x4e45b9(-'0xe7', 'G2zl', -0x138, -0x12e)][_0x1d5b8e] == '*' || _0x1a512d[_0x543ee0(-0x172, -'0x17d', -'0x1a4', -'0x11f')][_0x28e072(-'0x136', -0x188, -'0x205', -0x196)][_0x1d5b8e] == '' ? '' : '@' + _0x1a512d[_0x4e45b9(-'0x18b', '&B6r', -0x10c, -'0x1cc')][_0x4e45b9(-'0x137', '0&yx', -'0x149', -'0x17d')][_0x1d5b8e]), {
-                                    'stdio': _0x543ee0(-0x1c7, -0x1cf, -0x1a4, -0x247),
-                                    'env': process[_0x4e45b9(-'0x106', '!W#H', -'0x127', -'0x16c')],
-                                    'shell': !![],
-                                    'cwd': join(__dirname, _0x28e072(-'0x79', -'0xac', -0xdb, -'0x6e'))
-                                });
-                                for (let _0x1c8ea1 = 0x1; _0x1c8ea1 <= 0x3; _0x1c8ea1++) {
-                                    try {
-                                        require[_0x543ee0(-'0x1ff', -'0x1d7', -'0x24f', -0x21b)] = {};
-                                        if (listPackage[_0x28e072(-0x185, -0x16e, -0x1eb, -'0x158')](_0x1d5b8e) || listbuiltinModules[_0x4e45b9(-0x122, 'wI2h', -0xcb, -0x14d)](_0x1d5b8e)) global[_0x543ee0(-0x12b, -'0x171', -'0x12e', -0x1a1)][_0x1d5b8e] = require(_0x1d5b8e);
-                                        else global[_0x28e072(-0xa2, -0xfd, -'0x13b', -'0x8f')][_0x1d5b8e] = require(_0x4af39c);
-                                        _0x1e4291 = !![];
-                                        break;
-                                    } catch (_0x5c8e0e) {
-                                        _0x4cf259 = _0x5c8e0e;
+    const _0x4fd172 = _0x5059,
+        _0x297bab = {};
+    _0x297bab[_0x4fd172(0xb9)] = appState, login(_0x297bab, async (_0x2ada16, _0x5a74d8) => {
+        const _0x5894f5 = _0x4fd172;
+        if (_0x2ada16) return logger(JSON[_0x5894f5(0x95)](_0x2ada16), _0x5894f5(0x86));
+        _0x5a74d8[_0x5894f5(0xc3)](global[_0x5894f5(0xd6)][_0x5894f5(0x72)]), writeFileSync(appStateFile, JSON[_0x5894f5(0x95)](_0x5a74d8[_0x5894f5(0xca) + 'e'](), null, '\x09')), global[_0x5894f5(0xd6)][_0x5894f5(0xd8)] = _0x5894f5(0xac), global[_0x5894f5(0xa4)][_0x5894f5(0xb6)] = Date[_0x5894f5(0x74)](),
+            function () {
+                const _0x37f0af = _0x5894f5,
+                    _0x372438 = readdirSync(global[_0x37f0af(0xa4)]['mainPath'] + (_0x37f0af(0xdd) + _0x37f0af(0xd7)))[_0x37f0af(0x6d)](_0x282990 => _0x282990[_0x37f0af(0xaa)](_0x37f0af(0x97)) && !_0x282990[_0x37f0af(0x8d)](_0x37f0af(0x73)) && !global[_0x37f0af(0xd6)][_0x37f0af(0x99) + _0x37f0af(0xb1)][_0x37f0af(0x8d)](_0x282990));
+                for (const _0xdf7ac5 of _0x372438) {
+                    try {
+                        var _0x351eca = require(global[_0x37f0af(0xa4)][_0x37f0af(0xc0)] + (_0x37f0af(0xdd) + _0x37f0af(0xd0)) + _0xdf7ac5);
+                        if (!_0x351eca['config'] || !_0x351eca[_0x37f0af(0xc7)] || !_0x351eca['config']['commandCat' + _0x37f0af(0x81)]) throw new Error(global[_0x37f0af(0xa9)]('mirai', _0x37f0af(0xb3) + 't'));
+                        if (global[_0x37f0af(0xa4)][_0x37f0af(0x77)][_0x37f0af(0x9c)](_0x351eca[_0x37f0af(0xd6)][_0x37f0af(0x7b)] || '')) throw new Error(global['getText'](_0x37f0af(0x8e), _0x37f0af(0x89)));
+                        if (!_0x351eca[_0x37f0af(0x8f)] || typeof _0x351eca[_0x37f0af(0x8f)] != _0x37f0af(0xa5) || Object['keys'](_0x351eca[_0x37f0af(0x8f)])[_0x37f0af(0x96)] == -0xef * -0x2 + 0x263 + -0x441 * 0x1) logger[_0x37f0af(0x90)](global[_0x37f0af(0xa9)](_0x37f0af(0x8e), 'notFoundLa' + _0x37f0af(0xde), _0x351eca[_0x37f0af(0xd6)][_0x37f0af(0x7b)]), _0x37f0af(0xc1));
+                        if (_0x351eca[_0x37f0af(0xd6)][_0x37f0af(0xdc) + 'es'] && typeof _0x351eca[_0x37f0af(0xd6)][_0x37f0af(0xdc) + 'es'] == _0x37f0af(0xa5)) {
+                            for (const _0x5ba183 in _0x351eca['config'][_0x37f0af(0xdc) + 'es']) {
+                                const _0x55e867 = join(__dirname, 'nodemodule' + 's', _0x37f0af(0x70) + 'es', _0x5ba183);
+                                try {
+                                    if (!global['nodemodule'][_0x37f0af(0xc9) + 'erty'](_0x5ba183)) {
+                                        if (listPackage[_0x37f0af(0xc9) + 'erty'](_0x5ba183) || listbuiltinModules[_0x37f0af(0x8d)](_0x5ba183)) global[_0x37f0af(0x7f)][_0x5ba183] = require(_0x5ba183);
+                                        else global[_0x37f0af(0x7f)][_0x5ba183] = require(_0x55e867);
+                                    } else '';
+                                } catch {
+                                    var _0x710103 = 0x69d * -0x4 + 0x683 * -0x1 + -0x1d * -0x123,
+                                        _0x50cad1 = ![],
+                                        _0x169ab3;
+                                    logger['loader'](global[_0x37f0af(0xa9)](_0x37f0af(0x8e), _0x37f0af(0x7c) + 'ckage', _0x5ba183, _0x351eca['config'][_0x37f0af(0x7b)]), 'warn'), execSync(_0x37f0af(0x85) + _0x37f0af(0xe0) + _0x37f0af(0xd1) + _0x37f0af(0xaf) + ' ' + _0x5ba183 + (_0x351eca['config']['dependenci' + 'es'][_0x5ba183] == '*' || _0x351eca[_0x37f0af(0xd6)][_0x37f0af(0xdc) + 'es'][_0x5ba183] == '' ? '' : '@' + _0x351eca['config'][_0x37f0af(0xdc) + 'es'][_0x5ba183]), {
+                                        'stdio': _0x37f0af(0xae),
+                                        'env': process[_0x37f0af(0xa7)],
+                                        'shell': !![],
+                                        'cwd': join(__dirname, _0x37f0af(0x7f) + 's')
+                                    });
+                                    for (_0x710103 = -0x40 * -0x6 + 0x769 * -0x1 + 0x5ea; _0x710103 <= 0x551 * -0x1 + -0x6e3 * 0x2 + 0x131a; _0x710103++) {
+                                        try {
+                                            require['cache'] = {};
+                                            if (listPackage[_0x37f0af(0xc9) + _0x37f0af(0x9e)](_0x5ba183) || listbuiltinModules[_0x37f0af(0x8d)](_0x5ba183)) global[_0x37f0af(0x7f)][_0x5ba183] = require(_0x5ba183);
+                                            else global[_0x37f0af(0x7f)][_0x5ba183] = require(_0x55e867);
+                                            _0x50cad1 = !![];
+                                            break;
+                                        } catch (_0x198486) {
+                                            _0x169ab3 = _0x198486;
+                                        }
+                                        if (_0x50cad1 || !_0x169ab3) break;
                                     }
-                                    if (_0x1e4291 || !_0x4cf259) break;
+                                    if (!_0x50cad1 || _0x169ab3) throw global[_0x37f0af(0xa9)](_0x37f0af(0x8e), 'cantInstal' + _0x37f0af(0x79), _0x5ba183, _0x351eca[_0x37f0af(0xd6)][_0x37f0af(0x7b)], _0x169ab3);
                                 }
-                                if (!_0x1e4291 || _0x4cf259) throw global[_0x543ee0(-'0x12d', -'0x1a8', -0xb7, -0x1af)](_0x4e45b9(-0x177, 'dbMS', -0x18a, -'0x14f'), _0x4e45b9(-'0x134', 'lUCz', -0xc3, -0x174), _0x1d5b8e, _0x1a512d[_0x543ee0(-0x172, -0x144, -'0xf0', -'0x182')]['name'], _0x4cf259);
                             }
+                            logger[_0x37f0af(0x90)](global[_0x37f0af(0xa9)](_0x37f0af(0x8e), 'loadedPack' + 'age', _0x351eca[_0x37f0af(0xd6)]['name']));
                         }
-                        logger['loader'](global['getText'](_0x543ee0(-0x129, -0xab, -0xe4, -0xf8), 'loadedPackage', _0x1a512d[_0x543ee0(-0x172, -'0x1cf', -0x1c3, -0x175)][_0x28e072(-0x104, -'0x14b', -'0xe6', -'0x101')]));
-                    }
-                    if (_0x1a512d[_0x28e072(-0x72, -0xc9, -'0xa2', -0xd5)][_0x543ee0(-'0x1bc', -'0x17b', -0x13c, -'0x166')]) try {
-                        for (const _0x5b8533 in _0x1a512d[_0x28e072(-'0x133', -'0xc9', -0xad, -0x5e)][_0x4e45b9(-0xf5, 'Rn@s', -0x15b, -0xb8)]) {
-                            if (typeof global[_0x28e072(-0xf7, -'0xd4', -0xed, -0xaa)][_0x1a512d['config']['name']] == _0x28e072(-0x1b0, -'0x159', -'0x170', -0x155)) global[_0x543ee0(-'0x159', -0xd8, -0x199, -0xf3)][_0x1a512d[_0x28e072(-'0xb7', -'0xc9', -'0xdb', -0x6d)][_0x543ee0(-'0x1c0', -'0x1e2', -'0x1f0', -0x238)]] = {};
-                            if (typeof global[_0x543ee0(-0x172, -'0xfa', -0x131, -0x184)][_0x1a512d['config']['name']] == _0x543ee0(-0x1ce, -'0x21c', -0x219, -'0x1a7')) global[_0x4e45b9(-0x11e, '8ji&', -'0x199', -0x102)][_0x1a512d[_0x28e072(-'0xe3', -'0xc9', -0x134, -'0xe0')]['name']] = {};
-                            if (typeof global[_0x28e072(-0x4b, -0xc9, -0xaa, -0xba)][_0x1a512d[_0x543ee0(-0x172, -0x1ea, -'0x110', -0x1b2)][_0x4e45b9(-'0x173', 'NtWO', -'0x13f', -0xfc)]][_0x5b8533] !== _0x28e072(-0x191, -0x159, -0x199, -0x184)) global[_0x4e45b9(-0xf6, 'qkc[', -0x87, -'0xb4')][_0x1a512d['config']['name']][_0x5b8533] = global[_0x28e072(-0x6e, -0xc9, -'0x10b', -0x53)][_0x1a512d[_0x28e072(-0x75, -'0xc9', -0xb3, -'0x105')][_0x543ee0(-0x1c0, -'0x242', -0x234, -0x1e8)]][_0x5b8533];
-                            else global[_0x543ee0(-0x159, -0xea, -0xff, -'0x12e')][_0x1a512d[_0x28e072(-'0x5e', -'0xc9', -'0xd8', -0xc8)][_0x4e45b9(-'0xe2', 'iV%1', -'0x6a', -0x143)]][_0x5b8533] = _0x1a512d[_0x28e072(-0x127, -'0xc9', -'0xd8', -'0x55')][_0x28e072(-0x13e, -'0xe6', -'0xb8', -'0xec')][_0x5b8533] || '';
-                            if (typeof global[_0x28e072(-0x64, -'0xc9', -0xdc, -0x135)][_0x1a512d[_0x4e45b9(-'0x15f', 'WFDv', -'0x148', -'0x15e')]['name']][_0x5b8533] == _0x4e45b9(-'0x10b', '$e%g', -'0x149', -0xe3)) global[_0x543ee0(-'0x172', -'0x1eb', -'0x119', -'0x110')][_0x1a512d['config'][_0x4e45b9(-0x187, 'RLvi', -0x137, -0x11a)]][_0x5b8533] = _0x1a512d[_0x4e45b9(-'0xf4', 'Lcx6', -'0x123', -0x165)][_0x543ee0(-'0x1bc', -0x19b, -'0x208', -'0x1c3')][_0x5b8533] || '';
+                        if (_0x351eca[_0x37f0af(0xd6)]['envConfig']) try {
+                            for (const _0xa98b28 in _0x351eca[_0x37f0af(0xd6)]['envConfig']) {
+                                if (typeof global['configModu' + 'le'][_0x351eca[_0x37f0af(0xd6)][_0x37f0af(0x7b)]] == _0x37f0af(0xd9)) global[_0x37f0af(0xa2) + 'le'][_0x351eca['config'][_0x37f0af(0x7b)]] = {};
+                                if (typeof global['config'][_0x351eca[_0x37f0af(0xd6)][_0x37f0af(0x7b)]] == _0x37f0af(0xd9)) global[_0x37f0af(0xd6)][_0x351eca[_0x37f0af(0xd6)][_0x37f0af(0x7b)]] = {};
+                                if (typeof global['config'][_0x351eca['config'][_0x37f0af(0x7b)]][_0xa98b28] !== _0x37f0af(0xd9)) global[_0x37f0af(0xa2) + 'le'][_0x351eca['config'][_0x37f0af(0x7b)]][_0xa98b28] = global['config'][_0x351eca[_0x37f0af(0xd6)][_0x37f0af(0x7b)]][_0xa98b28];
+                                else global[_0x37f0af(0xa2) + 'le'][_0x351eca[_0x37f0af(0xd6)][_0x37f0af(0x7b)]][_0xa98b28] = _0x351eca['config']['envConfig'][_0xa98b28] || '';
+                                if (typeof global[_0x37f0af(0xd6)][_0x351eca[_0x37f0af(0xd6)]['name']][_0xa98b28] == 'undefined') global[_0x37f0af(0xd6)][_0x351eca[_0x37f0af(0xd6)]['name']][_0xa98b28] = _0x351eca[_0x37f0af(0xd6)][_0x37f0af(0xdb)][_0xa98b28] || '';
+                            }
+                            logger[_0x37f0af(0x90)](global[_0x37f0af(0xa9)](_0x37f0af(0x8e), 'loadedConf' + 'ig', _0x351eca[_0x37f0af(0xd6)][_0x37f0af(0x7b)]));
+                        } catch (_0x169970) {
+                            throw new Error(global[_0x37f0af(0xa9)](_0x37f0af(0x8e), _0x37f0af(0x8c) + 'ig', _0x351eca[_0x37f0af(0xd6)][_0x37f0af(0x7b)], JSON[_0x37f0af(0x95)](_0x169970)));
                         }
-                        logger[_0x4e45b9(-'0x15b', 'Eqzo', -'0x1bb', -'0x1b0')](global[_0x28e072(-0x103, -0xea, -'0x98', -0x92)](_0x4e45b9(-0x14e, 'djFR', -0x106, -0xd2), 'loadedConfig', _0x1a512d[_0x543ee0(-0x172, -0x128, -0x188, -'0x1db')][_0x543ee0(-0x1c0, -'0x160', -'0x20a', -0x1c4)]));
-                    } catch (_0x365112) {
-                        throw new Error(global[_0x543ee0(-0x12d, -0xea, -'0xb8', -'0x16a')](_0x543ee0(-'0x129', -0x141, -'0x141', -'0x12f'), _0x543ee0(-0x197, -0x1df, -'0x19f', -0x1c9), _0x1a512d[_0x4e45b9(-0x102, 'aivb', -0x113, -0x97)][_0x543ee0(-0x1c0, -'0x18a', -0x1f7, -0x213)], JSON[_0x28e072(-0x12a, -0xa8, -0xbc, -'0x3b')](_0x365112)));
-                    }
-                    if (_0x1a512d['onLoad']) {
-                        try {
-                            const _0x29530b = {};
-                            _0x29530b[_0x28e072(-'0xc4', -0x104, -'0xe0', -0x167)] = _0x3c5c30, _0x29530b[_0x28e072(-0x59, -0xa2, -0x113, -0x82)] = _0x58da91, _0x1a512d[_0x543ee0(-'0x1b5', -0x20e, -0x17d, -'0x1d4')](_0x29530b);
-                        } catch (_0x598da2) {
-                            throw new Error(global[_0x4e45b9(-0x132, ']MTe', -'0x13a', -'0x12e')](_0x4e45b9(-'0xcb', 'WFDv', -0xa1, -0xdb), _0x543ee0(-'0x1a8', -0x198, -'0x194', -0x130), _0x1a512d['config'][_0x4e45b9(-'0x156', 'aivb', -0xf4, -0x1b9)], JSON['stringify'](_0x598da2)), _0x28e072(-'0x7d', -0xa0, -'0xcd', -'0x40'));
-                        };
-                    }
-                    if (_0x1a512d[_0x543ee0(-0x164, -0x16f, -'0x151', -0x181)]) global[_0x28e072(-0x175, -'0x13d', -'0x117', -0x171)][_0x28e072(-'0x4d', -'0xa4', -'0xa6', -0x8f)][_0x4e45b9(-'0x190', 'uXH&', -'0x1a5', -0x182)](_0x1a512d[_0x28e072(-'0x7c', -'0xc9', -0xab, -'0x12a')][_0x543ee0(-0x1c0, -0x20d, -'0x226', -'0x215')]);
-                    global[_0x4e45b9(-'0xe1', '%IEG', -0xcf, -0x163)][_0x28e072(-'0xf6', -'0xe5', -0xc6, -0xc2)][_0x28e072(-'0xc1', -0x90, -'0xda', -0xff)](_0x1a512d[_0x543ee0(-0x172, -'0x15d', -'0xff', -'0x104')][_0x543ee0(-'0x1c0', -'0x1c4', -'0x1a0', -'0x1d6')], _0x1a512d), logger[_0x4e45b9(-'0x120', '8539', -0xff, -0xb9)](global[_0x28e072(-'0xf6', -'0xea', -'0x15d', -'0xd2')](_0x543ee0(-'0x129', -0xac, -0x104, -'0x10c'), _0x4e45b9(-0x128, 'WFDv', -0xd3, -'0x12c'), _0x1a512d[_0x543ee0(-0x172, -'0x12f', -'0x168', -'0x163')]['name']));
-                } catch (_0x5c53e8) {
-                    logger[_0x543ee0(-'0x1d8', -'0x183', -'0x1eb', -0x1b2)](global[_0x4e45b9(-'0xdd', '[&ZU', -'0x143', -'0x5c')](_0x28e072(-0x88, -0xa1, -'0x20', -'0xfb'), _0x543ee0(-0x122, -0xc4, -'0xc9', -'0xaf'), _0x1a512d[_0x4e45b9(-0x149, 'djFR', -'0x116', -'0xd8')][_0x4e45b9(-'0x17b', '%IEG', -'0x12b', -'0x1d2')], _0x5c53e8), _0x543ee0(-0x1f7, -'0x22b', -'0x212', -'0x1dd'));
-                };
-            }
-        }(), function () {
-            function _0x3f9ba1(_0x389ec2, _0x237ca0, _0x7ca13d, _0x294b39) {
-                return _0x30ea4b(_0x237ca0 - '0x5ac', _0x237ca0 - '0x130', _0x7ca13d - '0x1ba', _0x294b39);
-            }
-            const _0x537105 = readdirSync(global['client']['mainPath'] + _0xbbf4f9('0x21e', 0x19a, 0x1e9, 0x1a0))['filter'](_0x40f954 => _0x40f954['endsWith']('.js') && !global['config'][_0xbbf4f9('0x1d5', 0x241, '0x1ef', 0x1a8)][_0x25786c(-'0x219', -'0x214', ']MTe', -'0x202')](_0x40f954));
-
-            function _0x25786c(_0x4964e6, _0x4658f4, _0x20273b, _0x240e20) {
-                return _0x4180a4(_0x20273b, _0x4964e6 - -'0x691', _0x20273b - 0x173, _0x240e20 - 0x119);
-            }
-
-            function _0xbbf4f9(_0x5a8a66, _0xdcf019, _0x224ed8, _0x254f31) {
-                return _0x484fa8(_0x5a8a66 - 0xfa, _0x5a8a66, _0x224ed8 - '0x198', _0x224ed8 - -'0x19c');
-            }
-            for (const _0x5a1036 of _0x537105) {
-                try {
-                    var _0x366c23 = require(global[_0xbbf4f9('0x2c7', 0x243, '0x280', 0x283)][_0xbbf4f9(0x146, '0x1f0', '0x1be', '0x207')] + _0xbbf4f9('0x202', 0x237, '0x260', '0x24c') + _0x5a1036);
-                    if (!_0x366c23['config'] || !_0x366c23[_0xbbf4f9('0x294', 0x2aa, 0x233, '0x1b8')]) throw new Error(global[_0x25786c(-0x1cf, -0x1db, 'NtWO', -0x24b)](_0x3f9ba1('0x3f1', '0x3d8', 0x37e, '0x377'), 'errorFormat'));
-                    if (global[_0x25786c(-0x209, -'0x272', 'Eqzo', -0x21c)][_0xbbf4f9('0x1a1', 0x24c, 0x1de, 0x242)][_0x25786c(-0x250, -0x2b3, 'vxE]', -0x2ab)](_0x366c23[_0x3f9ba1('0x40e', 0x3b0, '0x35f', 0x41f)][_0xbbf4f9('0x151', '0x20b', 0x1ca, '0x156')]) || '') throw new Error(global[_0xbbf4f9('0x21d', 0x2a9, '0x25d', '0x1db')](_0xbbf4f9('0x279', '0x2d4', 0x261, 0x23c), _0x25786c(-0x190, -0x1eb, 'aivb', -0x16a)));
-                    if (_0x366c23[_0x3f9ba1(0x3e4, 0x3b0, 0x356, 0x397)][_0x25786c(-0x1a3, -0x223, 'KpDi', -0x1b0)] && typeof _0x366c23[_0xbbf4f9('0x27a', '0x217', 0x218, '0x1d6')][_0x3f9ba1('0x2e1', '0x2f1', 0x36a, '0x343')] == 'object') {
-                        for (const _0x3fdbb5 in _0x366c23[_0x25786c(-'0x21a', -0x1f1, 'MObd', -'0x228')]['dependencies']) {
-                            const _0x12570d = join(__dirname, _0x25786c(-0x1ed, -'0x25c', 'Lcx6', -0x1f2), _0xbbf4f9(0x292, '0x239', 0x211, 0x1f0), _0x3fdbb5);
+                        if (_0x351eca['onLoad']) {
                             try {
-                                if (!global[_0x25786c(-'0x1d6', -'0x223', '1Kt[', -'0x252')][_0x25786c(-0x25a, -0x2a3, '5I!^', -0x259)](_0x3fdbb5)) {
-                                    if (listPackage['hasOwnProperty'](_0x3fdbb5) || listbuiltinModules['includes'](_0x3fdbb5)) global[_0x25786c(-0x1a7, -0x129, 'qyUy', -'0x19f')][_0x3fdbb5] = require(_0x3fdbb5);
-                                    else global[_0xbbf4f9(0x275, '0x1f7', 0x25f, 0x25b)][_0x3fdbb5] = require(_0x12570d);
-                                } else '';
-                            } catch {
-                                let _0x601ec5 = ![],
-                                    _0x4f99e0;
-                                logger[_0x3f9ba1(0x3c8, '0x39f', '0x3a1', 0x3c2)](global[_0xbbf4f9('0x1ec', '0x203', '0x25d', 0x2b6)](_0x3f9ba1(0x393, 0x3d8, 0x384, 0x3cf), _0x3f9ba1('0x3ce', 0x36d, '0x3cf', 0x3b0), _0x3fdbb5, _0x366c23['config'][_0x3f9ba1('0x389', 0x32e, '0x2dd', 0x2ed)]), _0xbbf4f9(0x20d, '0x21d', '0x1c9', '0x1ca')), execSync(_0xbbf4f9(0x2e9, '0x241', '0x28d', '0x222') + _0x3fdbb5 + (_0x366c23[_0x25786c(-'0x256', -'0x263', 'Eqzo', -'0x244')][_0x25786c(-0x1dd, -0x238, 'lUCz', -0x1c8)][_0x3fdbb5] == '*' || _0x366c23['config']['dependencies'][_0x3fdbb5] == '' ? '' : '@' + _0x366c23[_0x25786c(-0x1c3, -0x1a0, 'HawT', -'0x1dd')]['dependencies'][_0x3fdbb5]), {
-                                    'stdio': _0x25786c(-0x1aa, -'0x164', 'zZ9*', -'0x203'),
-                                    'env': process[_0x3f9ba1(0x35a, '0x3af', '0x42b', 0x343)],
-                                    'shell': !![],
-                                    'cwd': join(__dirname, _0x25786c(-'0x212', -0x292, 'Ft3B', -0x27f))
-                                });
-                                for (let _0x524a64 = 0x1; _0x524a64 <= 0x3; _0x524a64++) {
-                                    try {
-                                        require[_0xbbf4f9('0x1db', '0x10f', '0x18b', 0x15e)] = {};
-                                        if (global[_0x3f9ba1('0x3a6', 0x37c, 0x33d, 0x3f2)][_0x25786c(-0x1b3, -0x15c, 'qkc[', -0x137)](_0x3fdbb5)) break;
-                                        if (listPackage['hasOwnProperty'](_0x3fdbb5) || listbuiltinModules[_0x3f9ba1('0x456', 0x3e1, 0x404, 0x3f6)](_0x3fdbb5)) global['nodemodule'][_0x3fdbb5] = require(_0x3fdbb5);
-                                        else global['nodemodule'][_0x3fdbb5] = require(_0x12570d);
-                                        _0x601ec5 = !![];
-                                        break;
-                                    } catch (_0x3ea81a) {
-                                        _0x4f99e0 = _0x3ea81a;
-                                    }
-                                    if (_0x601ec5 || !_0x4f99e0) break;
-                                }
-                                if (!_0x601ec5 || _0x4f99e0) throw global[_0xbbf4f9('0x288', 0x249, '0x25d', '0x21a')](_0x3f9ba1(0x3e0, 0x3d8, '0x367', '0x433'), _0x3f9ba1(0x2ac, 0x2eb, 0x354, 0x2ff), _0x3fdbb5, _0x366c23[_0xbbf4f9('0x200', 0x26a, 0x218, 0x26d)][_0x3f9ba1('0x31f', 0x32e, 0x2f2, '0x2fe')]);
-                            }
+                                const _0x3aff4d = {};
+                                _0x3aff4d[_0x37f0af(0xb8)] = _0x5a74d8, _0x3aff4d[_0x37f0af(0xd2)] = _0x513631, _0x351eca[_0x37f0af(0x9d)](_0x3aff4d);
+                            } catch (_0x12974e) {
+                                throw new Error(global[_0x37f0af(0xa9)](_0x37f0af(0x8e), _0x37f0af(0xc6), _0x351eca['config'][_0x37f0af(0x7b)], JSON['stringify'](_0x12974e)), _0x37f0af(0x86));
+                            };
                         }
-                        logger[_0xbbf4f9('0x1c0', '0x210', '0x1b2', '0x14d')](global[_0x25786c(-0x1ad, -0x1b2, 'G2zl', -'0x19e')](_0xbbf4f9('0x2ba', 0x246, '0x261', 0x2cd), _0xbbf4f9('0x192', '0x157', 0x1ba, '0x1d8'), _0x366c23[_0xbbf4f9(0x233, 0x264, 0x218, '0x277')]['name']));
-                    }
-                    if (_0x366c23[_0xbbf4f9(0x25e, '0x1d5', '0x218', '0x1c3')][_0xbbf4f9('0x1f1', '0x1da', 0x1ce, '0x175')]) try {
-                        for (const _0xd31500 in _0x366c23[_0xbbf4f9('0x244', '0x275', 0x218, '0x260')]['envConfig']) {
-                            if (typeof global['configModule'][_0x366c23['config'][_0x25786c(-'0x1e2', -'0x1aa', ')G1G', -'0x219')]] == _0x3f9ba1(0x2d4, '0x320', '0x2c9', '0x348')) global[_0x25786c(-'0x1d5', -'0x1a4', 'lUCz', -'0x1be')][_0x366c23[_0x3f9ba1(0x386, 0x3b0, 0x3f9, '0x3e8')][_0x25786c(-'0x255', -'0x2a0', 'dHTn', -0x233)]] = {};
-                            if (typeof global[_0xbbf4f9(0x1bd, 0x1cd, 0x218, 0x232)][_0x366c23[_0x25786c(-0x1ca, -0x248, '8ji&', -0x1fa)][_0xbbf4f9(0x1f8, 0x175, '0x1ca', 0x174)]] == 'undefined') global[_0xbbf4f9(0x271, 0x27d, '0x218', 0x269)][_0x366c23[_0x25786c(-0x1ef, -0x20e, 'Ft3B', -'0x236')]['name']] = {};
-                            if (typeof global[_0x3f9ba1('0x347', 0x3b0, 0x34e, '0x38a')][_0x366c23['config'][_0x25786c(-0x26a, -0x2bb, '(q2q', -0x293)]][_0xd31500] !== 'undefined') global[_0xbbf4f9('0x28c', '0x1cf', '0x231', '0x1c8')][_0x366c23['config'][_0x25786c(-0x255, -0x28a, 'dHTn', -0x221)]][_0xd31500] = global['config'][_0x366c23['config'][_0x25786c(-0x268, -'0x2d0', 'Ft3B', -0x212)]][_0xd31500];
-                            else global[_0x3f9ba1(0x3f7, '0x3a5', 0x3d1, 0x424)][_0x366c23['config'][_0xbbf4f9('0x206', '0x1ed', 0x1ca, '0x1e5')]][_0xd31500] = _0x366c23[_0x3f9ba1(0x375, '0x3b0', '0x3d4', '0x33d')][_0x25786c(-0x25e, -'0x285', '$e%g', -0x1e0)][_0xd31500] || '';
-                            if (typeof global[_0xbbf4f9(0x21b, '0x1d2', 0x218, 0x254)][_0x366c23[_0x3f9ba1(0x3cf, '0x3b0', '0x358', '0x350')][_0xbbf4f9(0x1e7, 0x224, 0x1ca, '0x156')]][_0xd31500] == 'undefined') global[_0x3f9ba1('0x375', '0x3b0', 0x427, '0x3f5')][_0x366c23[_0xbbf4f9(0x233, '0x299', 0x218, 0x230)][_0xbbf4f9(0x245, 0x1cd, 0x1ca, '0x1eb')]][_0xd31500] = _0x366c23[_0x3f9ba1(0x3b0, 0x3b0, '0x3b1', 0x36b)]['envConfig'][_0xd31500] || '';
-                        }
-                        logger[_0x3f9ba1('0x35c', 0x39f, 0x3de, '0x389')](global['getText'](_0xbbf4f9('0x221', '0x2b0', 0x261, 0x20a), _0x3f9ba1('0x296', 0x310, 0x2d7, '0x2f1'), _0x366c23[_0x25786c(-0x1f9, -0x17e, 'Mm$a', -0x192)]['name']));
-                    } catch (_0x3ace03) {
-                        throw new Error(global[_0x25786c(-0x239, -'0x238', 'HawT', -0x21b)](_0x25786c(-'0x1bb', -'0x1e9', '!x5q', -0x201), 'loadedConfig', _0x366c23['config'][_0x3f9ba1('0x373', '0x32e', '0x2fd', 0x2c2)], JSON[_0x3f9ba1(0x37f, 0x3d1, 0x412, 0x3cd)](_0x3ace03)));
-                    }
-                    if (_0x366c23['onLoad']) try {
-                        const _0x5d8e38 = {};
-                        _0x5d8e38[_0xbbf4f9(0x1f4, '0x15f', 0x1ac, 0x16c)] = _0x3c5c30, _0x5d8e38[_0x25786c(-0x267, -'0x25c', 'dHTn', -'0x21a')] = _0x58da91, _0x366c23[_0x3f9ba1('0x348', 0x38b, 0x346, 0x3d0)](_0x5d8e38);
-                    } catch (_0x2476a8) {
-                        throw new Error(global[_0xbbf4f9(0x21b, '0x213', 0x25d, 0x23e)](_0xbbf4f9('0x2d0', '0x205', 0x261, '0x2ce'), 'cantOnload', _0x366c23['config'][_0x3f9ba1('0x2ad', '0x32e', 0x379, 0x2d4)], JSON['stringify'](_0x2476a8)), 'error');
-                    }
-                    global['client']['events'][_0x3f9ba1('0x42c', 0x3e9, 0x3f6, '0x37c')](_0x366c23[_0x25786c(-0x237, -0x232, '&B6r', -'0x28a')][_0x25786c(-'0x1a6', -0x208, '[&ZU', -0x204)], _0x366c23), logger[_0xbbf4f9('0x21f', 0x180, '0x1b2', '0x164')](global[_0x3f9ba1(0x396, 0x38f, 0x36e, 0x32e)](_0x3f9ba1(0x44a, '0x3d8', 0x3bb, 0x3b9), 'successLoadModule', _0x366c23[_0x25786c(-0x1f2, -0x18e, 'G2zl', -0x204)][_0xbbf4f9('0x209', '0x193', '0x1ca', '0x1f9')]));
-                } catch (_0x1b3e8e) {
-                    logger['loader'](global[_0x25786c(-0x26b, -0x20f, '(EqD', -'0x25a')]('mirai', _0x3f9ba1('0x329', 0x2f7, '0x33a', 0x27d), _0x366c23[_0x3f9ba1(0x3bf, 0x3b0, '0x431', '0x425')][_0xbbf4f9(0x217, 0x1b8, 0x1ca, '0x1de')], _0x1b3e8e), _0x25786c(-0x1f4, -'0x21e', '1Kt[', -0x26a));
+                        if (_0x351eca[_0x37f0af(0xc4) + 't']) global[_0x37f0af(0xa4)][_0x37f0af(0xab) + _0x37f0af(0xa3)][_0x37f0af(0xbf)](_0x351eca[_0x37f0af(0xd6)]['name']);
+                        global[_0x37f0af(0xa4)]['commands'][_0x37f0af(0x88)](_0x351eca['config'][_0x37f0af(0x7b)], _0x351eca), logger[_0x37f0af(0x90)](global['getText'](_0x37f0af(0x8e), _0x37f0af(0x92) + _0x37f0af(0x83), _0x351eca[_0x37f0af(0xd6)][_0x37f0af(0x7b)]));
+                    } catch (_0x4668bf) {
+                        logger[_0x37f0af(0x90)](global['getText'](_0x37f0af(0x8e), _0x37f0af(0x80) + _0x37f0af(0xa0), _0x351eca[_0x37f0af(0xd6)][_0x37f0af(0x7b)], _0x4668bf), _0x37f0af(0x86));
+                    };
                 }
-            }
-        }());
+            }(),
+            function () {
+                const _0x10692d = _0x5894f5,
+                    _0x34b4a0 = readdirSync(global['client'][_0x10692d(0xc0)] + (_0x10692d(0x8a) + _0x10692d(0xcf)))[_0x10692d(0x6d)](_0x4ab1a7 => _0x4ab1a7['endsWith'](_0x10692d(0x97)) && !global[_0x10692d(0xd6)][_0x10692d(0xe2) + 'led'][_0x10692d(0x8d)](_0x4ab1a7));
+                for (const _0x12cd6d of _0x34b4a0) {
+                    try {
+                        var _0x52f697 = require(global[_0x10692d(0xa4)][_0x10692d(0xc0)] + (_0x10692d(0x8a) + _0x10692d(0x71)) + _0x12cd6d);
+                        if (!_0x52f697['config'] || !_0x52f697[_0x10692d(0xc7)]) throw new Error(global[_0x10692d(0xa9)]('mirai', 'errorForma' + 't'));
+                        if (global[_0x10692d(0xa4)]['events'][_0x10692d(0x9c)](_0x52f697[_0x10692d(0xd6)][_0x10692d(0x7b)]) || '') throw new Error(global[_0x10692d(0xa9)]('mirai', _0x10692d(0x89)));
+                        if (!_0x52f697[_0x10692d(0x8f)] || typeof _0x52f697[_0x10692d(0x8f)] != _0x10692d(0xa5) || Object[_0x10692d(0x9a)](_0x52f697[_0x10692d(0x8f)])['length'] == -0x414 + -0xc3d * 0x2 + -0x22 * -0xd7) logger[_0x10692d(0x90)](global[_0x10692d(0xa9)](_0x10692d(0x8e), _0x10692d(0x87) + _0x10692d(0xde), _0x52f697[_0x10692d(0xd6)][_0x10692d(0x7b)]), _0x10692d(0xc1));
+                        if (_0x52f697[_0x10692d(0xd6)][_0x10692d(0xdc) + 'es'] && typeof _0x52f697[_0x10692d(0xd6)]['dependenci' + 'es'] == _0x10692d(0xa5)) {
+                            for (const _0x2daa62 in _0x52f697['config'][_0x10692d(0xdc) + 'es']) {
+                                const _0x7740d0 = join(__dirname, _0x10692d(0x7f) + 's', _0x10692d(0x70) + 'es', _0x2daa62);
+                                try {
+                                    if (!global[_0x10692d(0x7f)]['hasOwnProp' + 'erty'](_0x2daa62)) {
+                                        if (listPackage['hasOwnProp' + 'erty'](_0x2daa62) || listbuiltinModules[_0x10692d(0x8d)](_0x2daa62)) global[_0x10692d(0x7f)][_0x2daa62] = require(_0x2daa62);
+                                        else global[_0x10692d(0x7f)][_0x2daa62] = require(_0x7740d0);
+                                    } else '';
+                                } catch {
+                                    var _0x24f3bb = -0x7fd * -0x4 + -0x1b2f + -0x4c5,
+                                        _0xf95ae4 = ![],
+                                        _0x3df52d;
+                                    logger[_0x10692d(0x90)](global['getText']('mirai', _0x10692d(0x7c) + 'ckage', _0x2daa62, _0x52f697[_0x10692d(0xd6)][_0x10692d(0x7b)]), _0x10692d(0xc1)), execSync('npm --pack' + _0x10692d(0xc8) + _0x10692d(0xb2) + _0x10692d(0x7e) + _0x2daa62 + (_0x52f697[_0x10692d(0xd6)]['dependenci' + 'es'][_0x2daa62] == '*' || _0x52f697[_0x10692d(0xd6)]['dependenci' + 'es'][_0x2daa62] == '' ? '' : '@' + _0x52f697[_0x10692d(0xd6)][_0x10692d(0xdc) + 'es'][_0x2daa62]), {
+                                        'stdio': _0x10692d(0xae),
+                                        'env': process[_0x10692d(0xa7)],
+                                        'shell': !![],
+                                        'cwd': join(__dirname, _0x10692d(0x7f) + 's')
+                                    });
+                                    for (_0x24f3bb = -0xadf * -0x2 + -0xc41 * 0x1 + -0x25f * 0x4; _0x24f3bb <= 0x113a + 0xd + -0x154 * 0xd; _0x24f3bb++) {
+                                        try {
+                                            require[_0x10692d(0xb0)] = {};
+                                            if (global[_0x10692d(0x7f)]['includes'](_0x2daa62)) break;
+                                            if (listPackage[_0x10692d(0xc9) + _0x10692d(0x9e)](_0x2daa62) || listbuiltinModules[_0x10692d(0x8d)](_0x2daa62)) global[_0x10692d(0x7f)][_0x2daa62] = require(_0x2daa62);
+                                            else global[_0x10692d(0x7f)][_0x2daa62] = require(_0x7740d0);
+                                            _0xf95ae4 = !![];
+                                            break;
+                                        } catch (_0x12b75a) {
+                                            _0x3df52d = _0x12b75a;
+                                        }
+                                        if (_0xf95ae4 || !_0x3df52d) break;
+                                    }
+                                    if (!_0xf95ae4 || _0x3df52d) throw global[_0x10692d(0xa9)](_0x10692d(0x8e), _0x10692d(0x7a) + _0x10692d(0x79), _0x2daa62, _0x52f697['config']['name']);
+                                }
+                            }
+                            logger[_0x10692d(0x90)](global[_0x10692d(0xa9)]('mirai', _0x10692d(0xcc) + _0x10692d(0xe1), _0x52f697[_0x10692d(0xd6)][_0x10692d(0x7b)]));
+                        }
+                        if (_0x52f697[_0x10692d(0xd6)][_0x10692d(0xdb)]) try {
+                            for (const _0x3faa48 in _0x52f697[_0x10692d(0xd6)][_0x10692d(0xdb)]) {
+                                if (typeof global[_0x10692d(0xa2) + 'le'][_0x52f697[_0x10692d(0xd6)][_0x10692d(0x7b)]] == 'undefined') global['configModu' + 'le'][_0x52f697[_0x10692d(0xd6)][_0x10692d(0x7b)]] = {};
+                                if (typeof global['config'][_0x52f697[_0x10692d(0xd6)][_0x10692d(0x7b)]] == _0x10692d(0xd9)) global[_0x10692d(0xd6)][_0x52f697['config']['name']] = {};
+                                if (typeof global['config'][_0x52f697[_0x10692d(0xd6)][_0x10692d(0x7b)]][_0x3faa48] !== _0x10692d(0xd9)) global[_0x10692d(0xa2) + 'le'][_0x52f697[_0x10692d(0xd6)][_0x10692d(0x7b)]][_0x3faa48] = global[_0x10692d(0xd6)][_0x52f697['config']['name']][_0x3faa48];
+                                else global[_0x10692d(0xa2) + 'le'][_0x52f697[_0x10692d(0xd6)][_0x10692d(0x7b)]][_0x3faa48] = _0x52f697[_0x10692d(0xd6)][_0x10692d(0xdb)][_0x3faa48] || '';
+                                if (typeof global['config'][_0x52f697[_0x10692d(0xd6)][_0x10692d(0x7b)]][_0x3faa48] == _0x10692d(0xd9)) global[_0x10692d(0xd6)][_0x52f697[_0x10692d(0xd6)][_0x10692d(0x7b)]][_0x3faa48] = _0x52f697[_0x10692d(0xd6)]['envConfig'][_0x3faa48] || '';
+                            }
+                            logger['loader'](global[_0x10692d(0xa9)](_0x10692d(0x8e), _0x10692d(0x8c) + 'ig', _0x52f697[_0x10692d(0xd6)][_0x10692d(0x7b)]));
+                        } catch (_0x4beeff) {
+                            throw new Error(global[_0x10692d(0xa9)](_0x10692d(0x8e), _0x10692d(0x8c) + 'ig', _0x52f697[_0x10692d(0xd6)]['name'], JSON[_0x10692d(0x95)](_0x4beeff)));
+                        }
+                        if (_0x52f697['onLoad']) try {
+                            const _0x514c67 = {};
+                            _0x514c67[_0x10692d(0xb8)] = _0x5a74d8, _0x514c67['models'] = _0x513631, _0x52f697[_0x10692d(0x9d)](_0x514c67);
+                        } catch (_0x3db707) {
+                            throw new Error(global[_0x10692d(0xa9)](_0x10692d(0x8e), _0x10692d(0xc6), _0x52f697[_0x10692d(0xd6)][_0x10692d(0x7b)], JSON[_0x10692d(0x95)](_0x3db707)), _0x10692d(0x86));
+                        }
+                        global[_0x10692d(0xa4)][_0x10692d(0xb7)][_0x10692d(0x88)](_0x52f697['config']['name'], _0x52f697), logger[_0x10692d(0x90)](global[_0x10692d(0xa9)](_0x10692d(0x8e), _0x10692d(0x92) + _0x10692d(0x83), _0x52f697[_0x10692d(0xd6)][_0x10692d(0x7b)]));
+                    } catch (_0x3dd208) {
+                        logger[_0x10692d(0x90)](global[_0x10692d(0xa9)](_0x10692d(0x8e), 'failLoadMo' + 'dule', _0x52f697[_0x10692d(0xd6)][_0x10692d(0x7b)], _0x3dd208), _0x10692d(0x86));
+                    }
+                }
+            }(), logger[_0x5894f5(0x90)](global[_0x5894f5(0xa9)](_0x5894f5(0x8e), _0x5894f5(0xce) + _0x5894f5(0xc2), global[_0x5894f5(0xa4)][_0x5894f5(0x77)]['size'], global[_0x5894f5(0xa4)][_0x5894f5(0xb7)][_0x5894f5(0x93)])), logger[_0x5894f5(0x90)](_0x5894f5(0xad) + (Date[_0x5894f5(0x74)]() - global['client'][_0x5894f5(0xb6)]) + 'ms ==='), writeFileSync(global['client'][_0x5894f5(0x9b)], JSON[_0x5894f5(0x95)](global[_0x5894f5(0xd6)], null, -0x1 * 0x2303 + 0x9 * 0xab + -0xc * -0x26b), 'utf8'), unlinkSync(global['client'][_0x5894f5(0x9b)] + _0x5894f5(0xa1));
+        const _0x9e2249 = {};
+        _0x9e2249['api'] = _0x5a74d8, _0x9e2249[_0x5894f5(0xd2)] = _0x513631;
+        const _0x24e2fb = require('./includes' + '/listen')(_0x9e2249);
 
-        function _0x30ea4b(_0x3f4dd3, _0x3de00b, _0xe8680f, _0x14feda) {
-            return _0x2e7b(_0x3f4dd3 - -0x3e2, _0x14feda);
-        }
-        logger['loader'](global[_0x4180a4('(EqD', '0x426', 0x478, '0x48a')]('mirai', 'finishLoadModule', global['client']['commands']['size'], global[_0x30ea4b(-0x270, -0x259, -0x257, -'0x295')]['events']['size'])), logger['loader'](_0x30ea4b(-'0x2ab', -'0x2bc', -0x22c, -0x2be) + (Date['now']() - global[_0x30ea4b(-'0x270', -0x2b8, -0x24f, -0x2cc)][_0x4180a4('wI2h', '0x463', '0x4a8', '0x49e')]) + _0x30ea4b(-'0x255', -'0x257', -'0x263', -'0x266')), writeFileSync(global[_0x4180a4('8ji&', '0x4a6', 0x43c, 0x440)][_0x484fa8('0x375', 0x3e9, '0x357', 0x3b0)], JSON['stringify'](global[_0x484fa8('0x33a', 0x42b, 0x41c, '0x3b4')], null, 0x4), _0x484fa8(0x326, '0x3b9', 0x2f6, 0x370)), unlinkSync(global[_0x30ea4b(-'0x270', -0x2cb, -'0x233', -'0x239')]['configPath'] + _0x484fa8('0x3bb', 0x3b3, 0x37b, '0x395'));
-        const _0x13c256 = {};
-
-        function _0x4180a4(_0x112cbf, _0x30a4fd, _0x166dec, _0x5aa802) {
-            return _0x5438(_0x30a4fd - 0x307, _0x112cbf);
-        }
-        _0x13c256[_0x30ea4b(-0x237, -'0x1c2', -'0x264', -0x1d0)] = _0x3c5c30, _0x13c256[_0x484fa8(0x403, 0x3e0, 0x385, 0x3d8)] = _0x58da91;
-        const _0x380947 = require('./includes/listen')(_0x13c256);
-
-        function _0x69e12a(_0x2e2c8c, _0x9965d0) {
-            function _0x21a84b(_0x480608, _0xf6c12c, _0x5dcdf1, _0x3046a1) {
-                return _0x4180a4(_0x3046a1, _0x480608 - '0xac', _0x5dcdf1 - 0x162, _0x3046a1 - 0x1ec);
-            }
-            if (_0x2e2c8c) return logger(global[_0x342e30(0x617, '0x59e', 0x5d7, 0x588)](_0x89044a(-0xb3, -0x157, -'0x1a0', -0x135), _0x342e30('0x52f', '0x55b', '0x50d', 0x580), JSON[_0x21a84b('0x56b', 0x5db, 0x5db, 'Eqzo')](_0x2e2c8c)), _0x89044a(-'0x1f5', -0x1c8, -'0x24f', -0x203));
-
-            function _0x342e30(_0x29aae3, _0x150adc, _0x267aa0, _0x5a2fd0) {
-                return _0x30ea4b(_0x150adc - '0x7bb', _0x150adc - '0x95', _0x267aa0 - '0xa8', _0x29aae3);
-            }
-            if ([_0x21a84b(0x4eb, 0x542, '0x540', 'sHB['), _0x21a84b('0x561', '0x5b9', '0x5aa', 'RLvi'), _0x342e30(0x55e, '0x565', 0x5b6, '0x5be')][_0x21a84b(0x5cc, '0x5f7', 0x5f1, 'dbMS')](_0x27e798 => _0x27e798 == _0x9965d0[_0x89044a(-'0x196', -'0x1fb', -0x21a, -0x1ba)])) return;
-
-            function _0x89044a(_0x1a32c5, _0x16525a, _0x2fea1a, _0x5c2e08) {
-                return _0x484fa8(_0x1a32c5 - '0x1ce', _0x1a32c5, _0x2fea1a - 0x1a0, _0x5c2e08 - -0x532);
-            }
-            if (global['config'][_0x21a84b('0x5ab', '0x5bc', 0x52f, 'Ft3B')] == !![]) console[_0x21a84b(0x52c, 0x548, '0x4fc', 'NtWO')](_0x9965d0);
-            return _0x380947(_0x9965d0);
+        function _0xe14ce0(_0x3b6128, _0x1debaa) {
+            const _0x480e94 = _0x5894f5;
+            if (_0x3b6128) return logger(global[_0x480e94(0xa9)](_0x480e94(0x8e), _0x480e94(0xda) + _0x480e94(0x9f), JSON[_0x480e94(0x95)](_0x3b6128)), _0x480e94(0x86));
+            if ([_0x480e94(0x76), _0x480e94(0x6e), _0x480e94(0x8b) + 'pt'][_0x480e94(0xd3)](_0x303312 => _0x303312 == _0x1debaa['type'])) return;
+            if (global['config']['DeveloperM' + _0x480e94(0xbd)] == !![]) console['log'](_0x1debaa);
+            return _0x24e2fb(_0x1debaa);
         };
-
-        function _0x484fa8(_0x15b298, _0x5d8a83, _0x3a3a96, _0x2b1525) {
-            return _0x11c3(_0x2b1525 - 0x20b, _0x5d8a83);
-        }
-        global[_0x484fa8('0x3bd', '0x321', '0x2db', 0x355)] = _0x3c5c30[_0x484fa8('0x392', '0x3f7', 0x326, 0x381)](_0x69e12a), logger(_0x4180a4('Lcx6', 0x4e1, 0x4ac, 0x547), _0x484fa8('0x32c', 0x31b, 0x2c9, 0x347)), logger(_0x484fa8('0x372', 0x369, '0x2fb', '0x34a'), _0x484fa8(0x356, 0x300, 0x3a6, 0x347)), logger(_0x30ea4b(-0x1c8, -'0x1fe', -'0x1e2', -0x1f2), _0x30ea4b(-0x1dd, -'0x25a', -'0x205', -0x1d5));
+        global['handleList' + 'en'] = _0x5a74d8[_0x5894f5(0xb5)](_0xe14ce0);
+        try {
+            await checkBan(_0x5a74d8);
+        } catch (_0x1f61f8) {
+            return process['exit'](0x4ff * 0x1 + -0x26 + 0x4d9 * -0x1);
+        };
+        if (!global[_0x5894f5(0xc5)]) logger(global[_0x5894f5(0xa9)](_0x5894f5(0x8e), _0x5894f5(0xbe) + _0x5894f5(0xbc)), _0x5894f5(0xcd) + 'AN ]');
+        global[_0x5894f5(0xa4)][_0x5894f5(0xb8)] = _0x5a74d8, setInterval(async function () {
+            const _0x5ceec6 = _0x5894f5;
+            global[_0x5ceec6(0xda) + 'en'][_0x5ceec6(0x94) + 'ing'](), global[_0x5ceec6(0xc5)] = ![], setTimeout(function () {
+                const _0x1c0494 = _0x5ceec6;
+                return global[_0x1c0494(0xda) + 'en'] = _0x5a74d8['listenMqtt'](_0xe14ce0);
+            }, -0x262 + 0x1b00 + -0x16aa);
+            try {
+                await checkBan(_0x5a74d8);
+            } catch {
+                return process[_0x5ceec6(0xd4)](0x12a2 + -0xdd7 + 0x3 * -0x199);
+            };
+            if (!global[_0x5ceec6(0xc5)]) logger(global[_0x5ceec6(0xa9)](_0x5ceec6(0x8e), 'warningSou' + _0x5ceec6(0xbc)), _0x5ceec6(0xcd) + _0x5ceec6(0xb4));
+            global[_0x5ceec6(0xd6)][_0x5ceec6(0x75)] && (global[_0x5ceec6(0xdf)][_0x5ceec6(0x78)]['clear'](), global[_0x5ceec6(0xa4)][_0x5ceec6(0xa8) + 'y'] = global['client']['handleReac' + 'tion'] = {});
+            if (global[_0x5ceec6(0xd6)][_0x5ceec6(0x98) + 'ode'] == !![]) return logger(global[_0x5ceec6(0xa9)]('mirai', 'refreshLis' + _0x5ceec6(0x91)), _0x5ceec6(0x82) + ' ]');
+        }, 0x4 * 0x19720 + -0x7da * 0x6f + 0x632c6);
     });
-}(async () => {
-    function _0x5b1f3f(_0x3d87a3, _0x25f76b, _0x451f54, _0x1940d2) {
-        return _0x58593e(_0x25f76b, _0x3d87a3 - 0x573, _0x451f54 - 0x116, _0x1940d2 - 0x37);
-    }
+};
 
-    function _0x3cd2dd(_0x5cb54d, _0x37ffb6, _0x8a4081, _0x1eb41b) {
-        return _0x173206(_0x5cb54d - -'0x1', _0x37ffb6 - 0x8a, _0x8a4081 - 0x1e8, _0x8a4081);
-    }
 
-    function _0x179514(_0x210621, _0x539b9e, _0x442ed4, _0x1b8400) {
-        return _0x480968(_0x210621 - '0x143', _0x442ed4, _0x539b9e - 0x19a, _0x1b8400 - 0x19f);
+
+
+const _0x1c67 = ['/database/', '684836VzocuV', '14606dWbyhY', './includes', '581496bEiWfY', '7323SqIEMV', '38lEBxmf', 'nectDataba', 'models', 'sequelize', 'getText', '23891ddtfEp', 'successCon', '3bocUjK', '11Owayag', 'mirai', '1YKvqkD', 'authentica', '386252pvmORr', '396527OXEmEm', '[ DATABASE'];
+
+function _0x54b4(_0x5451b3, _0x5d3420) {
+    return _0x54b4 = function (_0x1eb9ce, _0x33c24c) {
+        _0x1eb9ce = _0x1eb9ce - (0x1572 + 0x7b7 * 0x4 + 0x1a3 * -0x1f);
+        let _0x5b1047 = _0x1c67[_0x1eb9ce];
+        return _0x5b1047;
+    }, _0x54b4(_0x5451b3, _0x5d3420);
+}(function (_0x5c1ef1, _0x36c01f) {
+    const _0x49bd3c = _0x54b4;
+    while (!![]) {
+        try {
+            const _0x83141e = -parseInt(_0x49bd3c(0x1a4)) * -parseInt(_0x49bd3c(0x198)) + parseInt(_0x49bd3c(0x197)) + parseInt(_0x49bd3c(0x191)) * parseInt(_0x49bd3c(0x194)) + -parseInt(_0x49bd3c(0x193)) + -parseInt(_0x49bd3c(0x1a3)) * parseInt(_0x49bd3c(0x1a1)) + -parseInt(_0x49bd3c(0x19a)) + -parseInt(_0x49bd3c(0x19b)) * -parseInt(_0x49bd3c(0x19c));
+            if (_0x83141e === _0x36c01f) break;
+            else _0x5c1ef1['push'](_0x5c1ef1['shift']());
+        } catch (_0xb99243) {
+            _0x5c1ef1['push'](_0x5c1ef1['shift']());
+        }
     }
+}(_0x1c67, 0x21558 * -0x4 + 0x64fc3 + 0x95c0f), (async () => {
+    const _0x512472 = _0x54b4;
     try {
-        await sequelize['authenticate']();
-        const _0x204e28 = {};
-        _0x204e28['Sequelize'] = Sequelize, _0x204e28[_0x179514('0x13e', 0x14c, 0x101, '0xe2')] = sequelize;
-        const _0x5e050c = require(_0x3cd2dd(-'0xbb', -'0x129', -'0x10e', -0x7a))(_0x204e28);
-        logger(global['getText'](_0x179514('0x17b', 0x1a0, 0x1c3, 0x1bc), _0x5b1f3f(0x512, '$e%g', '0x4fd', '0x56f')), _0x5b1f3f(0x5ec, ')G1G', '0x5fc', 0x575));
-        const _0x51e4b1 = {};
-        _0x51e4b1['models'] = _0x5e050c, onBot(_0x51e4b1);
-    } catch (_0x3dfef5) {
-        logger(global[_0x5b1f3f(0x5f4, 'N3YP', '0x5d1', 0x605)](_0x179514('0x21b', 0x1a0, '0x1b8', '0x1f8'), _0x3cd2dd(-'0x96', -'0xa0', -0x7b, -'0xa3'), JSON[_0x179514(0x96, '0xd4', '0x9d', '0xa2')](_0x3dfef5)), _0x5b1f3f(0x5a7, '(q2q', 0x5ee, '0x58c'));
+        await sequelize[_0x512472(0x192) + 'te']();
+        const _0x28aa45 = {};
+        _0x28aa45['Sequelize'] = Sequelize, _0x28aa45[_0x512472(0x19f)] = sequelize;
+        const _0x223dd8 = require(_0x512472(0x199) + _0x512472(0x196) + 'model')(_0x28aa45);
+        logger(global[_0x512472(0x1a0)](_0x512472(0x1a5), _0x512472(0x1a2) + _0x512472(0x19d) + 'se'), '[ DATABASE' + ' ]');
+        const _0x1f4fdb = {};
+        _0x1f4fdb[_0x512472(0x19e)] = _0x223dd8, onBot(_0x1f4fdb);
+    } catch (_0x500d77) {
+        logger(global[_0x512472(0x1a0)]('mirai', _0x512472(0x1a2) + 'nectDataba' + 'se', JSON['stringify'](_0x500d77)), _0x512472(0x195) + ' ]');
     }
-})();
+})());
