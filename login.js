@@ -1,5 +1,5 @@
 const fs = require("fs-extra");
-const login = require("@maihuybao/fca-unofficial");
+const login = require("@miraipr0ject/fca-unofficial");
 const readline = require("readline");
 const totp = require("totp-generator");
 
@@ -33,6 +33,21 @@ login({ email, password }, option, (err, api) => {
 					console.log("Nhập mã xác minh 2 lớp:");
 					rl.on("line", line => {
 						err.continue(line);
+						rl.close();
+					});
+				}
+				break;
+			default:
+			console.error(err);
+			process.exit(1);
+		}
+		return;
+	}
+	const json = JSON.stringify(api.getAppState());
+	fs.writeFileSync(`./${config.APPSTATEPATH}`, json);
+	console.log("Đã ghi xong appstate!");
+	process.exit(0);
+});
 						rl.close();
 					});
 				}
