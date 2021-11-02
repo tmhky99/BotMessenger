@@ -7,7 +7,7 @@ module.exports.config = {
   hasPermssion: 0,
   credits: "huy hoàng và hoàng",
   description: "Bú Lồn Người Bạn Muốn",
-  commandCategory: "giải trí-nsfw",
+  commandCategory: "nsfw",
   usages: "bulon",
   cooldowns: 5,
   dependencies: {
