@@ -4,7 +4,7 @@ module.exports.config = {
 	hasPermssion: 0,
   credits: "Mirai",
 	description: "Đếm ngược đến sinh nhật",
-	commandCategory: "công cụ",
+	commandCategory: "khác",
 	cooldowns: 5
 }
 
