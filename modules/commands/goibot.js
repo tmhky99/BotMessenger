@@ -4,7 +4,7 @@ module.exports.config = {
     hasPermssion: 0,
     credits: "ManhG",
     description: "Gọi Bot autoreply",
-    commandCategory: "Không cần dấu lệnh",
+    commandCategory: "khác",
     usages: "gọi bot",
     cooldowns: 2,
     denpendencies: {}
