@@ -1,7 +1,7 @@
 {
     "language": "vi",
     "keyActive": "",
-    "DeveloperMode": true,
+    "DeveloperMode": false,
     "autoCreateDB": true,
     "allowInbox": true,
     "autoClean": false,
@@ -10,10 +10,10 @@
     "EMAIL": "",
     "PASSWORD": "",
     "OTPKEY": "",
-    "BOTNAME": "Tên Bot",
+    "BOTNAME": "LêĐịnh BotMessenger",
     "PREFIX": "/",
     "ADMINBOT": [
-        "USERID1"
+        "100003970753280"
     ],
     "DATABASE": {
         "sqlite": {
