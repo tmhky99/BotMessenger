@@ -1,11 +1,11 @@
 module.exports.config = {
 	name: "refresh",
 	version: "0.0.1",
-	hasPermssion: 0,
+	hasPermssion: 1,
 	credits: "Mirai Team",
 	description: "Load lại toàn bộ thông tin của nhóm",
 	commandCategory: "group",
-	cooldowns: 500
+	cooldowns: 15
 };
 
 module.exports.run = async ({ event, api, Threads }) => {
