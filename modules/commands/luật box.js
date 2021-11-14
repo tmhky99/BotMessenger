@@ -1,5 +1,5 @@
 module.exports.config = {
-	name: "luật",
+	name: "luậtbox",
 	version: "1.0.1",
 	hasPermssion: 1,
 	credits: "CatalizCS",
