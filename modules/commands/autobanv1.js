@@ -1,5 +1,5 @@
 module.exports.config = {
-    name: "Chửi Bot là bị ban",
+    name: "autobanv1",
     version: "1.0.0",
     hasPermssion: 0,
     credits: "Hệ thống admin-bot",
