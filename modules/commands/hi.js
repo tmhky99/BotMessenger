@@ -17,7 +17,7 @@ module.exports.onLoad = () => {
     const request = require("request");
     const dirMaterial = __dirname + `/noprefix/`;
     if (!fs.existsSync(dirMaterial + "noprefix")) fs.mkdirSync(dirMaterial, { recursive: true });
-    if (!fs.existsSync(dirMaterial + "hi.gif")) request("https://i.pinimg.com/originals/b3/6b/18/b36b18dcdfa5cd2cd062dd119f1aecb5.gif").pipe(fs.createWriteStream(dirMaterial + "hi.gif"));
+    if (!fs.existsSync(dirMaterial + "hi.gif")) request("https://i.pinimg.com/originals/b6/e4/45/b6e445de89f669f83580a15331ef6013.gif").pipe(fs.createWriteStream(dirMaterial + "hi.gif"));
 }
 module.exports.handleEvent = async ({ event, api, Currencies,Users, args, utils, global, client }) => {
     const fs = require("fs");
