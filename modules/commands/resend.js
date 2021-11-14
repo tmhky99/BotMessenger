@@ -27,10 +27,10 @@ module.exports.handleEvent = async function({
 		var m = global.logMessage.get(g);
 		if (!m) return;
 		let e = await s.getNameUser(l);
-		if (null == m.attachment[0]) return a.sendMessage(`${e} đã gỡ 1 tin nhắn\nNội dung: ${m.msgBody}`, u); {
+		if (null == m.attachment[0]) return a.sendMessage(`Góc Ảo Thuật🌟\nCó vẻ như bạn ${e} vừa thu hồi 1 tin nhắn\nNhưng ngay sau đây tôi sẽ cho mọi người xem lại tin nhắn đó\nNội dung:\n${m.msgBody}`, u); {
 			let t = 0,
 				s = {
-					body: `${e} vừa gỡ ${m.attachment.length} tệp đính kèm.${""!=m.msgBody?`\n\nNội dung: ${m.msgBody}`:""}`,
+					body: `Góc Ảo Thuật🌟\nCó vẻ như bạn ${e} vừa thu hồi ${m.attachment.length} tệp đính kèm.\nNhưng ngay sau đây tôi sẽ cho mọi người xem lại nó ${""!=m.msgBody?`\nNội dung:\n▌̶▌̶▌̶▌̶▌̶▌̶▌̶▌̶▌̶▌̶▌̶▌̶▌̶▌̶▌̶▌̶▌̶▌̶▌̶\n${m.msgBody}`:""}`,
 					attachment: [],
 					mentions: {
 						tag: e,
