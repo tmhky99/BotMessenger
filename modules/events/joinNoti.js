@@ -22,7 +22,7 @@ module.exports.run = async function({ api, event, Users }) {
 			let { threadName, participantIDs } = await api.getThreadInfo(threadID);
 
 			const threadData = global.data.threadData.get(parseInt(threadID)) || {};
-			const path = join(__dirname, "cache", "joinGif");
+			const path = join(__dirname, "cache"js);
 			const pathGif = join(path, `join.gif`);
 
 			var mentions = [], nameArray = [], memLength = [], i = 0;
