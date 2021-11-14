@@ -148,8 +148,8 @@ users.needObject=Phải là một Object
 
 # includes/handle/handleCommand.js
 
-handleCommand.userBanned=Hiện tại bạn đã bị mất quyền dụng bot!\n🌟Liên hệ với AdminBot qua Link FB: https://fb.me/ledinh1905 để biết thêm chi tiết.\n%1\n%2
-handleCommand.threadBanned=Hiện tại nhóm của bạn đã bị mất quyền sử dụng bot!\n🌟Vui lòng liên hệ với AdminBot qua link FB: https://fb.me/ledinh1905\n%1\n%2
+handleCommand.userBanned=Hiện tại bạn chưa được cấp quyền dụng bot!\n🌟Vui lòng lên hệ với AdminBot qua Link FB: https://fb.me/ledinh1905 để biết thêm chi tiết.\n%1\n%2
+handleCommand.threadBanned=Hiện tại nhóm của bạn chưa được cấp quyền sử dụng bot!\n🌟Vui lòng liên hệ với AdminBot qua link FB: https://fb.me/ledinh1905\n%1\n%2
 handleCommand.commandNotExist=❗Bạn đang sử dụng lệnh gì đấy ?\nNhập lệnh sai rồi, vui lòng kiểm tra và thử lại\nChào tạm biệt bạn.
 handleCommand.commandThreadBanned=Không thể sử dụng lệnh '%1' ở nhóm vì đã bị khoá lệnh.\nVui lòng liên hệ với AdminBot để biết thêm chi tiết.
 handleCommand.commandUserBanned=Bạn đã bị cấm sử dụng lệnh "%1"\nVui lòng liên hệ với AdminBot để biết thêm chi tiết.
