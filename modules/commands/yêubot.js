@@ -23,7 +23,7 @@ module.exports.handleEvent = async ({ event, api, Currencies,Users, args, utils,
     const fs = require("fs");
     let name = await Users.getNameUser(event.senderID)
     var msg = {
-                body: `Cảm ơn cậu 🥰\nBot cũng yêu cậu lắm 😘`,
+                body: `Cảm ơn cậu nhé ${name} 🥰\nBot cũng yêu cậu lắm 😘`,
                 attachment: fs.createReadStream(__dirname + `/noprefix/yêubot.gif`)
             }
     if (event.body.toLowerCase() == "yêu bot"){
