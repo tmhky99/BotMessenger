@@ -1,7 +1,7 @@
 module.exports.config = {
     name: "nickname",
     version: "1.0.0",
-    hasPermssion: 1,
+    hasPermssion: 2,
     credits: "CatalizCS",
     description: "Bật tắt thay đổi biệt danh trong nhóm",
     commandCategory: "system",
