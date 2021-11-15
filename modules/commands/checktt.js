@@ -1,5 +1,5 @@
 module.exports.config = {
-	name: "tuongtac",
+	name: "checktt",
 	version: "1.6.0",
 	hasPermssion: 0,
 	credits: "Mirai Team fix get by D-Jukie",
