@@ -46,7 +46,7 @@ module.exports.run = async function ({ event, api, Users, args, Threads }) {
           listBanned.push(`${i++}. ${name} \nUID: ${singleUser}`);
         }
         return api.sendMessage(listBanned.length != 0 ? api.sendMessage(`❎Hiện tại đang có ${listBanned.length} người dùng bị ban\n\n${listBanned.join("\n")}` +
-          "\n\nReply tin nhắn này + số thứ tự để unban user tương ứng",
+          "\n💟Lê Định BotMessenger",
           threadID, (error, info) => {
             global.client.handleReply.push({
               name: this.config.name,
