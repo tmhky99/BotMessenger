@@ -198,32 +198,28 @@ var _0x74ab=["\x67\xE0","\x74\xF4\x6D","\x62\u1EA7\x75","\x63\x75\x61","\x63\xE1
         attachment: createReadStream(__dirname + '/cache/baucua/baucua.gif')
       }, threadID, (err, info) => {
         if (err) return api.sendMessage(err, threadID, messageID);
-        setTimeout(() => {
-          api.unsendMessage(info.messageID);
-          var check = list.findIndex(i => i.toString() == content1);
-          var check2 = list.includes(content1);
-          //console.log(check);
-          //console.log(icon1 + icon2 + icon3);
-          if (check >= 0 || check2 == true) {
-            return api.sendMessage({
-              body: `✨ Kết quả: ${icon1} | ${icon2} | ${icon3}\n✨Bạn đã thắng và nhận được số tiền: ${moneyBet * 3}$`,
-              attachment: listimg
-            }, threadID, () => Currencies.increaseMoney(senderID, moneyBet * 3), messageID);
-          }
-          else if (check < 0 || check2 == false) {
-            return api.sendMessage({
-              body: `✨ Kết quả: ${icon1} | ${icon2} | ${icon3}\n✨ Bạn đã thua và bị trừ đi số tiền: ${moneyBet}$`,
-              attachment: listimg
-            }, threadID, () => Currencies.decreaseMoney(senderID, moneyBet), messageID);
-          }
-          else {
-            return api.sendMessage('Đã xảy ra lỗi. Vui lòng thử lại sau 5s', threadID, messageID);
-          }
-        }, 3000);
-      }, messageID);
-    }
-    catch (err) {
-      console.error(err);
-      return api.sendMessage(err, event.threadID, event.messageID);
-    }
-      }
+ ​        ​setTimeout​(​(​)​ ​=>​ ​{ 
+ ​          ​api​.​unsendMessage​(​info​.​messageID​)​; 
+ ​          ​if​ ​(​bau1 == bau2 ​&& bau2 == bau3)​ ​{ 
+ ​            ​return​ ​api​.​sendMessage​(​{ 
+ ​              ​body​: ​`✨ Kết quả: ​${​icon1​}​ | ​${​icon2​}​ | ​${​icon3​}​\n✨Bạn đã thắng và nhận được số tiền: ​${​moneyBet​ ​*​ ​3​}​$`​, 
+ ​              ​attachment​: ​listimg 
+ ​            ​}​,​ ​threadID​,​ ​(​)​ ​=>​ ​Currencies​.​increaseMoney​(​senderID​,​ ​moneyBet​ ​*​ ​3​)​,​ ​messageID​)​; 
+ ​          ​} 
+ ​          ​else​ ​if​ ​(​bau1 == bau2 ​|| bau1 == bau3 || bau2 == bau3)​ ​{ 
+ ​            ​return​ ​api​.​sendMessage​(​{ 
+ ​              ​body​: ​`✨ Kết quả: ​${​icon1​}​ | ​${​icon2​}​ | ​${​icon3​}​\n✨Bạn đã thắng và nhận được số tiền: ​${​moneyBet​ ​*​ ​1}​$`​, 
+ ​              ​attachment​: ​listimg 
+ ​            ​}​,​ ​threadID​,​ ​(​)​ ​=>​ ​Currencies​.​increaseMoney​(​senderID​,​ ​moneyBet​)​,​ ​messageID​)​; 
+ ​          ​} 
+ ​          ​else​ ​{ 
+ ​            ​ 
+ ​            ​return​ ​api​.​sendMessage​(​{ 
+ ​              ​body​: ​`✨ Kết quả: ​${​icon1​}​ | ​${​icon2​}​ | ​${​icon3​}​\n✨ Bạn đã thua và bị trừ đi số tiền: ​${​moneyBet​}​$`​, 
+ ​              ​attachment​: ​listimg 
+ ​            ​}​,​ ​threadID​,​ ​(​)​ ​=>​ ​Currencies​.​decreaseMoney​(​senderID​,​ ​moneyBet​)​,​ ​messageID​)​; 
+ ​          ​}
+ ​        ​}​,​ ​3000​)​; 
+ ​      ​}​,​ ​messageID​)​; 
+ ​    ​} 
+        ​}
