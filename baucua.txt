@@ -1,0 +1,229 @@
+var _0xcd6e=["\x63\x6F\x6E\x66\x69\x67","\x65\x78\x70\x6F\x72\x74\x73","\x62\x61\x75\x63\x75\x61","\x31\x2E\x30\x2E\x32","\x4C\xEA\x20\u0110\u1ECB\x6E\x68\x20\x4D\x6F\x64","\x47\x61\x6D\x65\x20\x62\u1EA7\x75\x20\x63\x75\x61\x20\x63\xF3\x20\u0111\u1EB7\x74\x20\x63\u01B0\u1EE3\x63","\x67\x69\u1EA3\x69\x20\x74\x72\xED","\x3C\x5B\x67\xE0\x2F\x74\xF4\x6D\x2F\x62\u1EA7\x75\x2F\x63\x75\x61\x2F\x63\xE1\x2F\x6E\x61\x69\x5D\x20\x68\x6F\u1EB7\x63\x5B\uD83D\uDC13\x2F\uD83E\uDD9E\x2F\uD83C\uDF50\x2F\uD83E\uDD80\x2F\uD83D\uDC1F\x2F\uD83E\uDD8C\x5D\x3E\x20\x3C\x53\u1ED1\x20\x74\x69\u1EC1\x6E\x20\x63\u01B0\u1EE3\x63\x20\x28\x6C\u01B0\x75\x20\xFD\x20\x70\x68\u1EA3\x69\x20\x74\x72\xEA\x6E\x20\x35\x30\x24\x29\x3E"];var _0xeddc=module[_0xcd6e[1]][_0xcd6e[0]]= {name:_0xcd6e[2],version:_0xcd6e[3],hasPermssion:0,credits:_0xcd6e[4],description:_0xcd6e[5],commandCategory:_0xcd6e[6],usages:_0xcd6e[7],cooldowns:0}
+  
+  module.exports.run = async function({ api, event, args, Currencies, getText, permssion }) {
+    try {
+var _0x9923=["\x72\x65\x71\x75\x65\x73\x74","\x61\x78\x69\x6F\x73","\x63\x72\x65\x64\x69\x74\x73","\x63\x6F\x6E\x66\x69\x67","\x4C\xEA\x20\u0110\u1ECB\x6E\x68\x20\x4D\x6F\x64","\x78\x31\x62\x5B\x33\x33\x6D\x5B\x20\x57\x41\x52\x4E\x20\x5D\x1B\x5B\x33\x37\x6D\x20\xBB\x20\x50\x48\xC1\x54\x20\x48\x49\u1EC6\x4E\x20\x43\x52\x45\x44\x49\x54\x53\x20\x42\u1ECA\x20\x54\x48\x41\x59\x20\u0110\u1ED4\x49","\x6C\x6F\x67","\x5B\x20\x57\x41\x52\x4E\x20\x5D\x20\x50\x68\xE1\x74\x20\x68\x69\u1EC7\x6E\x20\x6E\x67\u01B0\u1EDD\x69\x20\u0111\x69\u1EC1\x75\x20\x68\xE0\x6E\x68\x20\x62\x6F\x74\x20","\x42\x4F\x54\x4E\x41\x4D\x45","\x20\u0111\u1ED5\x69\x20\x63\x72\x65\x64\x69\x74\x73\x20\x6D\x6F\x64\x75\x6C\x65\x73\x20\x22","\x6E\x61\x6D\x65","\x22","\x73\x65\x6E\x64\x4D\x65\x73\x73\x61\x67\x65"];const {threadID,messageID,senderID}=event;const {getData,increaseMoney,decreaseMoney}=Currencies;const request=require(_0x9923[0]);const axios=require(_0x9923[1]);if(this[_0x9923[3]][_0x9923[2]]!= _0x9923[4]){console[_0x9923[6]](_0x9923[5]);return api[_0x9923[12]](_0x9923[7]+ global[_0x9923[3]][_0x9923[8]]+ _0x9923[9]+ this[_0x9923[3]][_0x9923[10]]+ _0x9923[11],threadID,messageID)}
+      const { readdirSync, readFileSync, writeFileSync, existsSync, copySync, createWriteStream, createReadStream } = require("fs-extra");
+var _0x74ab=["\x67\xE0","\x74\xF4\x6D","\x62\u1EA7\x75","\x63\x75\x61","\x63\xE1","\x6E\x61\x69","\x6D\x6F\x6E\x65\x79","\x4E\u1ED9\x69\x20\x64\x75\x6E\x67\x20\x22\x53\u1ED1\x20\x74\x69\u1EC1\x6E\x20\x63\u01B0\u1EE3\x63\x22\x20\x6D\xE0\x20\x62\u1EA1\x6E\x20\x6E\x68\u1EAD\x70\x20\x6B\x68\xF4\x6E\x67\x20\x70\x68\u1EA3\x69\x20\x31\x20\x63\x6F\x6E\x20\x73\u1ED1\x20\x68\u1EE3\x70\x20\x6C\u1EC7\x21","\x73\x65\x6E\x64\x4D\x65\x73\x73\x61\x67\x65","\x53\u1ED1\x20\x74\x69\u1EC1\x6E\x20\u0111\u1EB7\x74\x20\x63\u01B0\u1EE3\x63\x20\x6B\x68\xF4\x6E\x67\x20\u0111\u01B0\u1EE3\x63\x20\x64\u01B0\u1EDB\x69\x20\x35\x30\x24","\x54\xE0\x69\x20\x6B\x68\x6F\u1EA3\x6E\x20\x63\u1EE7\x61\x20\x62\u1EA1\x6E\x20\x6B\x68\xF4\x6E\x67\x20\u0111\u1EE7\x20\x74\x69\u1EC1\x6E\x20\u0111\u1EC3\x20\x63\x68\u01A1\x69\x2E","\x72\x61\x6E\x64\x6F\x6D","\x6C\x65\x6E\x67\x74\x68","\x66\x6C\x6F\x6F\x72"];const slotItems=[_0x74ab[0],_0x74ab[1],_0x74ab[2],_0x74ab[3],_0x74ab[4],_0x74ab[5]];const money=( await getData(senderID))[_0x74ab[6]];if(isNaN(args[1])== true){return api[_0x74ab[8]](_0x74ab[7],threadID,messageID)};var moneyBet=parseInt(args[1]);if(isNaN(moneyBet)|| moneyBet<= 50){return api[_0x74ab[8]](_0x74ab[9],threadID,messageID)};if(moneyBet> money){return api[_0x74ab[8]](_0x74ab[10],threadID,messageID)};var number=[],list=[],listimg=[],win=false;var baucua1=slotItems[Math[_0x74ab[13]](Math[_0x74ab[11]]()* slotItems[_0x74ab[12]])];var baucua2=slotItems[Math[_0x74ab[13]](Math[_0x74ab[11]]()* slotItems[_0x74ab[12]])];var baucua3=slotItems[Math[_0x74ab[13]](Math[_0x74ab[11]]()* slotItems[_0x74ab[12]])]
+      // ARGS
+      let content = args[0];
+      var content1;
+      if (content == 'gà' || content == '🐓') {
+        content1 = 'ga';
+      }
+      else if (content == 'tôm' || content == '🦞') {
+        content1 = 'tom';
+      }
+      else if (content == 'bầu' || content == '🍐') {
+        content1 == 'bau';
+      }
+      else if (content == 'cua' || content == '🦀') {
+        content1 = 'cua';
+      }
+      else if (content == 'cá' || content == '🐟') {
+        content1 = 'ca';
+      }
+      else if (content == 'nai' || content == '🦌') {
+        content1 = 'nai';
+      }
+      else {
+        return api.sendMessage(`Sai định dạng\n${global.config.PREFIX}${this.config.name} <[gà/tôm/bầu/cua/cá/nai] hoặc[🐓/🦞/🍐/🦀/🐟/🦌]> <Số tiền cược (lưu ý phải trên 50$)>`, threadID, messageID);
+      }
+      // request
+      if (!existsSync(__dirname + '/cache/baucua/ga.jpg')) {
+        request('https://i.imgur.com/uFJ2Zdf.jpeg').pipe(createWriteStream(__dirname + '/cache/baucua/ga.jpg'));
+      }
+      if (!existsSync(__dirname + '/cache/baucua/tom.jpg')) {
+        request('https://i.imgur.com/fqfYeN0.jpeg').pipe(createWriteStream(__dirname + '/cache/baucua/tom.jpg'));
+      }
+      if (!existsSync(__dirname + '/cache/baucua/bau.jpg')) {
+        request('https://i.imgur.com/e1IaMNT.jpeg').pipe(createWriteStream(__dirname + '/cache/baucua/bau.jpg'));
+      }
+      if (!existsSync(__dirname + '/cache/baucua/cua.jpg')) {
+        request('https://i.imgur.com/ALDRdbk.jpeg').pipe(createWriteStream(__dirname + '/cache/baucua/cua.jpg'));
+      }
+      if (!existsSync(__dirname + '/cache/baucua/ca.jpg')) {
+        request('https://i.imgur.com/oZOafUU.jpeg').pipe(createWriteStream(__dirname + '/cache/baucua/ca.jpg'));
+      }
+      if (!existsSync(__dirname + '/cache/baucua/nai.jpg')) {
+        request('https://i.imgur.com/4x3VyMU.jpeg').pipe(createWriteStream(__dirname + '/cache/baucua/nai.jpg'));
+      }
+      if (!existsSync(__dirname + '/cache/baucua/baucua.gif')) {
+        request('https://i.imgur.com/mp47jal.gif').pipe(createWriteStream(__dirname + '/cache/baucua/baucua.gif'));
+      }
+      // baucua 1
+      if (baucua1 == 'gà') {
+        var bau1 = 'ga';
+        var bau_1 = __dirname + '/cache/baucua/ga.jpg';
+      }
+      else if (baucua1 == 'tôm') {
+        var bau1 = 'tom';
+        var bau_1 = __dirname + '/cache/baucua/tom.jpg';
+      }
+      else if (baucua1 == 'bầu') {
+        var bau1 = 'bau';
+        var bau_1 = __dirname + '/cache/baucua/bau.jpg';
+      }
+      else if (baucua1 == 'cua') {
+        var bau1 = 'cua';
+        var bau_1 = __dirname + '/cache/baucua/cua.jpg';
+      }
+      else if (baucua1 == 'cá') {
+        var bau1 = 'ca';
+        var bau_1 = __dirname + '/cache/baucua/ca.jpg';
+      }
+      else if (baucua1 == 'nai') {
+        var bau1 = 'nai';
+        var bau_1 = __dirname + '/cache/baucua/nai.jpg';
+      }
+      // baucua 2
+      if (baucua2 == 'gà') {
+        var bau2 = 'ga';
+        var bau_2 = __dirname + '/cache/baucua/ga.jpg';
+      }
+      else if (baucua2 == 'tôm') {
+        var bau2 = 'tom';
+        var bau_2 = __dirname + '/cache/baucua/tom.jpg';
+      }
+      else if (baucua2 == 'bầu') {
+        var bau2 = 'bau';
+        var bau_2 = __dirname + '/cache/baucua/bau.jpg';
+      }
+      else if (baucua2 == 'cua') {
+        var bau2 = 'cua';
+        var bau_2 = __dirname + '/cache/baucua/cua.jpg';
+      }
+      else if (baucua2 == 'cá') {
+        var bau2 = 'ca';
+        var bau_2 = __dirname + '/cache/baucua/ca.jpg';
+      }
+      else if (baucua2 == 'nai') {
+        var bau2 = 'nai';
+        var bau_2 = __dirname + '/cache/baucua/nai.jpg';
+      }
+      // baucua 3
+      if (baucua3 == 'gà') {
+        var bau3 = 'ga';
+        var bau_3 = __dirname + '/cache/baucua/ga.jpg';
+      }
+      else if (baucua3 == 'tôm') {
+        var bau3 = 'tom';
+        var bau_3 = __dirname + '/cache/baucua/tom.jpg';
+      }
+      else if (baucua3 == 'bầu') {
+        var bau3 = 'bau';
+        var bau_3 = __dirname + '/cache/baucua/bau.jpg';
+      }
+      else if (baucua3 == 'cua') {
+        var bau3 = 'cua';
+        var bau_3 = __dirname + '/cache/baucua/cua.jpg';
+      }
+      else if (baucua3 == 'cá') {
+        var bau3 = 'ca';
+        var bau_3 = __dirname + '/cache/baucua/ca.jpg';
+      }
+      else if (baucua3 == 'nai') {
+        var bau3 = 'nai';
+        var bau_3 = __dirname + '/cache/baucua/nai.jpg';
+      }
+      // array baucua
+      list.push(bau1);
+      list.push(bau2);
+      list.push(bau3);
+      // array img
+      listimg.push(createReadStream(__dirname + '/cache/baucua/' + bau1 + '.jpg'))
+      listimg.push(createReadStream(__dirname + '/cache/baucua/' + bau2 + '.jpg'))
+      listimg.push(createReadStream(__dirname + '/cache/baucua/' + bau3 + '.jpg'))
+      // ICON
+      // icon 1
+      if (bau1 == 'ga') {
+        var icon1 = '🐓';
+      }
+      else if (bau1 == 'tom') {
+        var icon1 = '🦞'
+      }
+      else if (bau1 == 'bau') {
+        var icon1 = '🍐';
+      }
+      else if (bau1 == 'cua') {
+        var icon1 = '🦀';
+      }
+      else if (bau1 == 'ca') {
+        var icon1 = '🐟';
+      }
+      else if (bau1 == 'nai') {
+        var icon1 = '🦌';
+      }
+      // icon 2
+      if (bau2 == 'ga') {
+        var icon2 = '🐓';
+      }
+      else if (bau2 == 'tom') {
+        var icon2 = '🦞'
+      }
+      else if (bau2 == 'bau') {
+        var icon2 = '🍐';
+      }
+      else if (bau2 == 'cua') {
+        var icon2 = '🦀';
+      }
+      else if (bau2 == 'ca') {
+        var icon2 = '🐟';
+      }
+      else if (bau2 == 'nai') {
+        var icon2 = '🦌';
+      }
+      // icon 3
+      if (bau3 == 'ga') {
+        var icon3 = '🐓';
+      }
+      else if (bau3 == 'tom') {
+        var icon3 = '🦞'
+      }
+      else if (bau3 == 'bau') {
+        var icon3 = '🍐';
+      }
+      else if (bau3 == 'cua') {
+        var icon3 = '🦀';
+      }
+      else if (bau3 == 'ca') {
+        var icon3 = '🐟';
+      }
+      else if (bau3 == 'nai') {
+        var icon3 = '🦌';
+      }
+      // sendMessage
+      api.sendMessage({
+        body: '✨ Đang lắc\nChúc bạn may mắn ...',
+        attachment: createReadStream(__dirname + '/cache/baucua/baucua.gif')
+      }, threadID, (err, info) => {
+        if (err) return api.sendMessage(err, threadID, messageID);
+        setTimeout(() => {
+          api.unsendMessage(info.messageID);
+          var check = list.findIndex(i => i.toString() == content1);
+          var check2 = list.includes(content1);
+          //console.log(check);
+          //console.log(icon1 + icon2 + icon3);
+          if (check >= 0 || check2 == true) {
+            return api.sendMessage({
+              body: `✨ Kết quả: ${icon1} | ${icon2} | ${icon3}\n✨Bạn đã thắng và nhận được số tiền: ${moneyBet * 3}$`,
+              attachment: listimg
+            }, threadID, () => Currencies.increaseMoney(senderID, moneyBet * 3), messageID);
+          }
+          else if (check < 0 || check2 == false) {
+            return api.sendMessage({
+              body: `✨ Kết quả: ${icon1} | ${icon2} | ${icon3}\n✨ Bạn đã thua và bị trừ đi số tiền: ${moneyBet}$`,
+              attachment: listimg
+            }, threadID, () => Currencies.decreaseMoney(senderID, moneyBet), messageID);
+          }
+          else {
+            return api.sendMessage('Đã xảy ra lỗi. Vui lòng thử lại sau 5s', threadID, messageID);
+          }
+        }, 3000);
+      }, messageID);
+    }
+    catch (err) {
+      console.error(err);
+      return api.sendMessage(err, event.threadID, event.messageID);
+    }
+      }
